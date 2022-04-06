@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U2</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <div class="navbar-brand">
+                    <a href="./index.html"><img src="./assets/img/logo.png" alt="Logo U2"></a>
+                </div>
+                <ul class="navbar-menu">
+                    <li class="navbar-item"><a class="navbar-link" href="./index.html"  data-type="navbar-active">Inicio</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="./pages/noticias.html">Noticias</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="./pages/discografia.html">Discografia</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="./pages/miembros.html">Miembros</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="./pages/sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="navbar-item"><a class="navbar-link" href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+                <button id="btn-toggle" class="navbar-btn"><i class="fa-solid fa-bars"></i></button>
+            </div>
+        </nav>
+        <!-- Carrousel de Images (el de Bootstrap en un futuro) -->
+        <div class="homepage-banner"></div>
+    </header>
+
+    <main>
+        <!-- Last News Section -->
+        <section class="last-news-section">
+            <h1 class="last-news-section__title">Ultimas Noticias</h1>
+            <div class="last-news-section__container">
+
+                <!-- Card #1 -->
+                <div class="news-card">
+                    <div class="news-card__image">
+                        <img src="./assets/img/article1.jpg" alt="Artículo 1">
+                    </div>
+                    <div class="news-card__body">
+                        <h1>Title 1</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero et odio voluptates porro debitis incidunt asperiores. Aliquam, eum earum.</p>
+                        <a class="news-card__body--btn" href="./pages/noticias.html">Ver mas</a>
+                    </div>
+                </div>
+
+                <!-- Card #2 -->
+                <div class="news-card">
+                    <div class="news-card__image">
+                        <img src="./assets/img/article2.jpg" alt="Artículo 2">
+                    </div>
+                    <div class="news-card__body">
+                        <h1>Title 2</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero et odio voluptates porro debitis incidunt asperiores. Aliquam, eum earum.</p>
+                        <a class="news-card__body--btn" href="./pages/noticias.html">Ver mas</a>
+                    </div>
+                </div>
+
+                <!-- Card #3 -->
+                <div class="news-card">
+                    <div class="news-card__image">
+                        <img src="./assets/img/article3.jpg" alt="Artículo 3">
+                    </div>
+                    <div class="news-card__body">
+                        <h1>Title 3</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero et odio voluptates porro debitis incidunt asperiores. Aliquam, eum earum.</p>
+                        <a class="news-card__body--btn" href="./pages/noticias.html">Ver mas</a>
+                    </div>
+                </div>
+
+                <!-- Card #4 -->
+                <div class="news-card">
+                    <div class="news-card__image">
+                        <img src="./assets/img/article4.jpg" alt="Artículo 4">
+                    </div>
+                    <div class="news-card__body">
+                        <h1>Title 4</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero et odio voluptates porro debitis incidunt asperiores. Aliquam, eum earum.</p>
+                        <a class="news-card__body--btn" href="./pages/noticias.html">Ver mas</a>
+                    </div>
+                </div>
+
+                <!-- Card #5 -->
+                <div class="news-card">
+                    <div class="news-card__image">
+                        <img src="./assets/img/article5.jpg" alt="Artículo 5">
+                    </div>
+                    <div class="news-card__body">
+                        <h1>Title 5</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut vero et odio voluptates porro debitis incidunt asperiores. Aliquam, eum earum.</p>
+                        <a class="news-card__body--btn" href="./pages/noticias.html">Ver mas</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-section">
+            <div class="about-section__container">
+                <div class="about-section__info">
+                    <h2>U2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem vitae, impedit eos provident hic voluptatibus dolor labore odit id dolores.</p>
+                    <a class="about-section__info--btn" href="./pages/sobre-nosotros.html">Conocenos mas</a>
+                </div>
+                <div class="about-section__image">
+                    <img src="./assets/img/about-us.jpg" alt="About U2">
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotify Section -->
+        <section class="spotify-section">
+            <div class="spotify-section__container">
+                <div class="spotify-section__image">
+                    <a href="https://open.spotify.com/artist/51Blml2LZPmy7TTiAg47vQ" target="_blank"><img src="./assets/img/spotify-banner.jpg" alt="Spotify U2 Banner"></a>
+                </div>
+                <div class="spotify-section__text">
+                    <h1>Encuentranos en <span class="spotify-section__text--spotify"><i class="fa-brands fa-spotify"></i>Spotify</span></h1>
+                    <p>U2 have spent the vast majority of their career as the biggest rock & roll band in the world, a title that captures not only their popularity...</p>
+                    <ul>
+                        <li>9.507.470 <span class="spotify-section__text--span">de </span>Seguidores</li>
+                        <li>17.148.884 <span class="spotify-section__text--span">Oyentes </span>Mensuales</li>
+                        <li>374.127 <span class="spotify-section__text--span">Oyentes en </span>Mexico City, MX</li>
+                        <li>362.260 <span class="spotify-section__text--span">Oyentes en </span>São Paulo, BR</li>
+                        <li>331.174 <span class="spotify-section__text--span">Oyentes en </span>Santiago, CL</li>
+                        <li>274.577 <span class="spotify-section__text--span">Oyentes en </span>London, GB</li>
+                        <li>240.467 <span class="spotify-section__text--span">Oyentes en </span>Sydney, AU</li>
+                    </ul>
+                    <div class="spotify-section__text--top">
+                        <img src="./assets/img/top-number.png" alt="Top Number">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-content__social-media">
+                <ul>
+                    <a href="https://www.facebook.com/u2" class="footer-content__social-media--icons" target="_blank"><li class="footer-content__social-media--icons"><i class="fa-brands fa-facebook"></i></li></a>
+                    <a href="https://www.instagram.com/u2/" class="footer-content__social-media--icons" target="_blank"><li class="footer-content__social-media--icons"><i class="fa-brands fa-instagram"></i></li></a>
+                    <a href="https://www.youtube.com/u2" class="footer-content__social-media--icons" target="_blank"><li class="footer-content__social-media--icons"><i class="fa-brands fa-youtube"></i></li></a>
+                    <a href="https://twitter.com/u2" class="footer-content__social-media--icons" target="_blank"><li class="footer-content__social-media--icons"><i class="fa-brands fa-twitter"></i></li></a>
+                    <a href="https://open.spotify.com/artist/51Blml2LZPmy7TTiAg47vQ" class="footer-content__social-media--icons" target="_blank"><li class="footer-content__social-media--icons"><i class="fa-brands fa-spotify"></i></li></a>
+                </ul>
+            </div>
+            <hr class="footer-content__divider">
+            <div class="footer-content__info">
+                <ul class="footer-content__info--menu">
+                    <a href="#"><li>Help</li></a>
+                    <a href="#"><li>Privacy</li></a>
+                    <a href="#"><li>Terms</li></a>
+                    <a href="#"><li>Conditions</li></a>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright-section">
+            <p>&copy; Copyright 2022 - U2  |  Diseñada por <a href="https://lucapandolfelli.github.io" target="_blank">Luca Pandolfelli</a></p>
+        </div>
+    </footer>
+</body>
+</html>
