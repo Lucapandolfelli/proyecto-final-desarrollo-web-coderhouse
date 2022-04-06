@@ -11,6 +11,7 @@
 
 html{
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 @font-face{
@@ -100,6 +101,37 @@ a[data-type='navbar-active']{
     background-image: url('../img/banner.jpg');
     background-size: cover;
     background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homepage-banner__content{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding-block: 20%;
+}
+
+.homepage-banner__content h1{
+    font-size: clamp(3.125rem, 5vw, 6rem);
+    text-transform: uppercase;
+}
+
+.homepage-banner__content--btn{
+    display: block;
+    height: 50px;
+    width: 50px;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
 }
 
 /*** LAST NEWS SECTION ***/
