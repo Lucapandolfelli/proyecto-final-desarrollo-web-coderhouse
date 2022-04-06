@@ -132,6 +132,12 @@ a[data-type='navbar-active']{
     justify-content: center;
     align-content: center;
     margin: 0 auto;
+    transition: all .3s ease;
+}
+
+.homepage-banner__content--btn:hover{
+    background-color: #fff;
+    color: #000;
 }
 
 /*** LAST NEWS SECTION ***/
