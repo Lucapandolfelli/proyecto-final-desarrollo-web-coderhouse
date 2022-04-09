@@ -3,10 +3,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap');
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+li {
+  margin: 0;
 }
 
 html{
@@ -140,6 +159,17 @@ a[data-type='navbar-active']{
     color: #000;
 }
 
+.carousel__image{
+    width: 100%;
+    height: calc(100vh - 80px);
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.carousel-caption{
+    bottom: calc(50vh - 80px);
+}
+
 /*** LAST NEWS SECTION ***/
 
 .last-news-section{
@@ -153,6 +183,8 @@ a[data-type='navbar-active']{
     font-size: 38px;
     text-align: center;
     margin-bottom: 3rem;
+    font-weight: 700;
+    line-height: 1.66;
 }
 
 .last-news-section__container{
@@ -261,6 +293,11 @@ a[data-type='navbar-active']{
     position: relative;
 }
 
+.spotify-section__text h1{
+    font-weight: 700;
+    font-size: 2rem;
+}
+
 .spotify-section__text h1, .spotify-section__text p{
     margin-bottom: 15px;
 }
@@ -315,6 +352,7 @@ a[data-type='navbar-active']{
 
 .about-section__info h2{
     margin-bottom: 3%;
+    font-weight: 700;
 }
 
 .about-section__info p{
@@ -365,6 +403,8 @@ a[data-type='navbar-active']{
     border-bottom: 3px solid #d1d1d1;
     padding-bottom: .5rem;
     margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.66;
 }
 
 /*** DISCOGRAPHY SECTION ***/
@@ -540,30 +580,6 @@ a[data-type='navbar-active']{
     width: 100%;
     margin: 2rem auto;
     padding: 2rem;
-}
-
-.contact-section form{
-    display: grid;
-    grid-template-columns: repeat(2,45%);
-    justify-content: center;
-    gap: 1rem;
-}
-
-.contact-section form input{
-    padding: 1rem 1rem;
-}
-
-.contact-section form #edad{
-    grid-column-start: 1;
-}
-
-.contact-section form #contenido{
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.contact-section form #enviar{
-    grid-column-start: 1;
 }
 
 /*** FOOTER ***/
