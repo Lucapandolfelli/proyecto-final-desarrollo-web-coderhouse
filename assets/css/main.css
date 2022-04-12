@@ -52,6 +52,7 @@ nav{
 .navbar{
     height: 80px;
     background-color: #000;
+    padding: 0;
 }
 
 .navbar-container{
@@ -61,6 +62,14 @@ nav{
     height: 100%;
     width: 70%;
     margin-inline: auto;
+}
+
+.navbar-logo{
+    height: 100%;
+}
+
+.navbar-logo img{
+    height: 100%;
 }
 
 .navbar-menu{
@@ -773,6 +782,9 @@ footer{
 /* 1023px */
 
 @media (max-width: 1023px){
+    .navbar{
+        height: 60px;
+    }
     .navbar-container{
         width: 90%;
     }
