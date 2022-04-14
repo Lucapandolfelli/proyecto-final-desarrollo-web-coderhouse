@@ -44,6 +44,14 @@ nav{
     margin-inline: auto;
 }
 
+.navbar-logo{
+    height: 100%;
+}
+
+.navbar-logo img{
+    height: 100%;
+}
+
 .navbar-menu{
     list-style: none;
     display: flex;
@@ -753,6 +761,9 @@ footer{
 /* 1023px */
 
 @media (max-width: 1023px){
+    .navbar{
+        height: 60px;
+    }
     .navbar-container{
         width: 90%;
     }
