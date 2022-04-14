@@ -1,0 +1,61 @@
+/*** SPOTIFY SECTION ***/
+
+.spotify-section{
+    height: 500px;
+    background-color: #131416;
+    display: flex;
+    align-items: center;
+}
+
+.spotify-section__container{
+    padding: 2% 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spotify-section__image{
+    height: 350px;
+    width: 350px;
+}
+
+.spotify-section__image img{
+    height: 100%;
+    width: 100%;
+}
+
+.spotify-section__text{
+    width: 50%;
+    margin-left: 50px;
+    color: #f1f1f1;
+    position: relative;
+}
+
+.spotify-section__text h1, .spotify-section__text p{
+    margin-bottom: 15px;
+}
+
+.spotify-section__text--spotify{
+    font-family: 'Gotham';
+    color: #1ed760;
+    font-weight: 400;
+}
+
+.spotify-section__text--spotify i{
+    margin-right: 2px;
+}
+
+.spotify-section__text ul{
+    padding-left: 35px;
+}
+
+.spotify-section__text--span{
+    color: #5c5c5c;
+    font-size: 14px;
+}
+
+.spotify-section__text--top{
+    position: absolute;
+    top: -30px;
+    right: -60px;
+}

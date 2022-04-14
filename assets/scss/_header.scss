@@ -1,0 +1,122 @@
+/*** NAVBAR ***/
+
+.navbar{
+    height: 80px;
+    background-color: #000;
+    font-family: 'Fredoka', sans-serif;
+
+    .navbar-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 70%;
+        margin-inline: auto;
+
+        .navbar-logo{
+            height: 100%;
+
+            img{
+                height: 100%;
+            }
+        }
+
+        .navbar-menu{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+
+            .navbar-item{
+                a[data-type='navbar-active']{
+                    color: #f1f1f1;
+                }
+            }
+
+            .navbar-link{
+                font-size: clamp(1rem, 1.5vw, 1.125rem);
+                text-decoration: none;
+                text-transform: uppercase;
+                color: #5c5c5c;
+                transition: all .3s ease;
+
+                &:hover{
+                    color: #f1f1f1;
+                } 
+            }
+        }
+
+        .navbar-btn{
+            display: none;
+            border: none;
+            background-color: transparent;
+            color: #fff;
+            cursor: pointer;
+
+            i{
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+/*** HERO ***/
+
+.hero{
+    height: 60vh;
+    margin-bottom: 2%;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        filter: brightness(0.6);
+    }
+}
+
+/*** HOMEPAGE BANNER ***/
+
+.homepage-banner{
+    height: calc(100vh - 80px);
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .homepage-banner__content{
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding-block: 20%;
+
+        h1{
+            font-size: clamp(3.125rem, 5vw, 6rem);
+            text-transform: uppercase;
+        }
+
+        .homepage-banner__content--btn{
+            display: block;
+            height: 50px;
+            width: 50px;
+            padding: 1rem;
+            color: #fff;
+            text-decoration: none;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            margin: 0 auto;
+            transition: all .3s ease;
+
+            &:hover{
+                background-color: #fff;
+                color: #000;
+            }
+        }
+    }
+}

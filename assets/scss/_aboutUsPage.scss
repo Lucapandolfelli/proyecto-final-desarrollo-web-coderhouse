@@ -1,0 +1,19 @@
+/*** ABOUT US SECTION ***/
+
+.about-us-section{
+    padding: 1em 0 2% 0;
+    margin: 0 auto;
+
+    .about-us-section__content{
+        width: 95%;
+        margin: 0 auto;
+
+        p{
+            margin-bottom: 1em;
+
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

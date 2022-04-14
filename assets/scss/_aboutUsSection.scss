@@ -1,0 +1,61 @@
+/*** ABOUT US SECTION ***/
+
+.about-section{
+    background-color: #00acee;
+    padding: 4% 20%;
+}
+
+.about-section__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
+
+.about-section__info{
+    position: relative;
+    width: 40%;
+    height: 400px;
+    margin-right: 2%;
+    background-color: #f4f4f4;
+    padding: 2rem;
+}
+
+.about-section__info h2{
+    margin-bottom: 3%;
+}
+
+.about-section__info p{
+    margin-bottom: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.about-section__info--btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    background-color: #222;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .4s ease;
+    border: 1px solid #222;
+}
+
+.about-section__info--btn:hover{
+    color: #222;
+    background-color: transparent;
+}
+
+.about-section__image{
+    width: 60%;
+    height: 100%;
+}
+
+.about-section__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

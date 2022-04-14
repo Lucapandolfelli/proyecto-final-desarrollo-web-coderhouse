@@ -1,0 +1,50 @@
+/*** DISCOGRAPHY SECTION ***/
+
+.discography-section{
+    display: grid;
+    grid-template-columns: repeat(4, 270px);
+    justify-content: center;
+    gap: 20px;
+    padding: 2% 0;
+}
+
+.discography-section__card{
+    height: 270px;
+    width: 270px;
+    position: relative;
+    cursor: pointer;
+}
+
+.discography-section__card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(1);
+}
+
+.discography-section__card--text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    opacity: 0;
+    background-color: rgba(0,0,0,0.8);
+    transition: all .4s ease;
+}
+
+.discography-section__card--text h2{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 400;
+}
+
+.discography-section__card:hover .discography-section__card--text{
+    opacity: 1;
+}
