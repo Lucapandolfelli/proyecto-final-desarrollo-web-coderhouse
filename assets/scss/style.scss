@@ -55,15 +55,16 @@ body{
 .site-page{
     width: 70%;
     margin: 3rem auto;
+
+    .site-page__title{
+        text-transform: uppercase;
+        font-size: 40px;
+        border-bottom: 3px solid #d1d1d1;
+        padding-bottom: .5rem;
+        margin-bottom: 1rem;
+    }    
 }
 
-.site-page__title{
-    text-transform: uppercase;
-    font-size: 40px;
-    border-bottom: 3px solid #d1d1d1;
-    padding-bottom: .5rem;
-    margin-bottom: 1rem;
-}
 
 
 
