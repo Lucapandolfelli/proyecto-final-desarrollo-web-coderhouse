@@ -5,28 +5,28 @@
     width: 100%;
     margin: 2rem auto;
     padding: 2rem;
-}
 
-.contact-section form{
-    display: grid;
-    grid-template-columns: repeat(2,45%);
-    justify-content: center;
-    gap: 1rem;
-}
+    form{
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        justify-content: center;
+        gap: 1rem;
 
-.contact-section form input{
-    padding: 1rem 1rem;
-}
+        input{
+            padding: 1rem 1rem;
+        }
 
-.contact-section form #edad{
-    grid-column-start: 1;
-}
+        #edad{
+            grid-column-start: 1;
+        }
 
-.contact-section form #contenido{
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
+        #contenido{
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
 
-.contact-section form #enviar{
-    grid-column-start: 1;
+        #enviar{
+            grid-column-start: 1;
+        }
+    }
 }
