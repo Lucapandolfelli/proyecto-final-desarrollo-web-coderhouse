@@ -1,0 +1,42 @@
+/*** BASE ***/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face{
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Font/GothamMedium.ttf');
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(1rem, 2vw, 1.125rem);
+    line-height: 1.66;
+}
+
+/*** SITE ***/  
+
+.site-page{
+    width: 70%;
+    margin: 3rem auto;
+
+    .site-page__title{
+        text-transform: uppercase;
+        font-size: 40px;
+        border-bottom: 3px solid #d1d1d1;
+        padding-bottom: .5rem;
+        margin-bottom: 1rem;
+    }    
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>U2</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -39,8 +40,8 @@
     <main>
         <!-- Last News Section -->
         <section class="last-news-section" id="last-news">
-            <h1 class="last-news-section__title">Ultimas Noticias</h1>
-            <div class="last-news-section__container">
+            <h1 class="last-news-section__title" data-aos="zoom-in" data-aos-duration="1500">Ultimas Noticias</h1>
+            <div class="last-news-section__container" data-aos="fade-right" data-aos-duration="2000">
 
                 <!-- Card #1 -->
                 <div class="news-card">
@@ -108,12 +109,12 @@
         <!-- About Us Section -->
         <section class="about-section">
             <div class="about-section__container">
-                <div class="about-section__info">
+                <div class="about-section__info" data-aos="fade-right" data-aos-duration="2000">
                     <h2>U2</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem vitae, impedit eos provident hic voluptatibus dolor labore odit id dolores.</p>
                     <a class="about-section__info--btn" href="./pages/sobre-nosotros.html">Conocenos mas</a>
                 </div>
-                <div class="about-section__image">
+                <div class="about-section__image" data-aos="zoom-in-left" data-aos-duration="2000">
                     <img src="./assets/img/about-us.jpg" alt="About U2">
                 </div>
             </div>
@@ -170,5 +171,9 @@
             <p>&copy; Copyright 2022 - U2  |  Diseñada por <a href="https://lucapandolfelli.github.io" target="_blank">Luca Pandolfelli</a></p>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
