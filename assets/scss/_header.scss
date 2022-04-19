@@ -2,7 +2,7 @@
 
 .navbar{
     height: 80px;
-    background-color: #000;
+    background-color: $color--dark;
     font-family: 'Fredoka', sans-serif;
 
     .navbar-container{
@@ -30,7 +30,7 @@
 
             .navbar-item{
                 a[data-type='navbar-active']{
-                    color: #f1f1f1;
+                    color: $color--white-1;
                 }
             }
 
@@ -38,11 +38,11 @@
                 font-size: clamp(1rem, 1.5vw, 1.125rem);
                 text-decoration: none;
                 text-transform: uppercase;
-                color: #5c5c5c;
+                color: $color--light-grey-1;
                 transition: all .3s ease;
 
                 &:hover{
-                    color: #f1f1f1;
+                    color: $color--white-1;
                 } 
             }
         }
@@ -51,7 +51,7 @@
             display: none;
             border: none;
             background-color: transparent;
-            color: #fff;
+            color: $color--white-1;
             cursor: pointer;
 
             i{
@@ -88,7 +88,7 @@
     align-items: center;
 
     .homepage-banner__content{
-        color: #fff;
+        color: $color--white-1;
         display: flex;
         flex-direction: column;
         padding-block: 20%;
@@ -103,9 +103,9 @@
             height: 50px;
             width: 50px;
             padding: 1rem;
-            color: #fff;
+            color: $color--white-1;
             text-decoration: none;
-            border: 1px solid #fff;
+            border: 1px solid $color--white-1;
             border-radius: 50%;
             display: grid;
             justify-content: center;
@@ -114,8 +114,8 @@
             transition: all .3s ease;
 
             &:hover{
-                background-color: #fff;
-                color: #000;
+                background-color: $color--white-1;
+                color: $color--dark;
             }
         }
     }

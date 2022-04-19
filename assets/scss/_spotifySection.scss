@@ -25,7 +25,7 @@
         .spotify-section__text{
             width: 50%;
             margin-left: 50px;
-            color: #f1f1f1;
+            color: $color--white-1;
             position: relative;
 
             h1,
@@ -47,7 +47,7 @@
                 padding-left: 35px;
 
                 .spotify-section__text--span{
-                    color: #5c5c5c;
+                    color: $color--light-grey-1;
                     font-size: 14px;
                 }
             }

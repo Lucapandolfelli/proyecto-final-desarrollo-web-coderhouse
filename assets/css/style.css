@@ -1,4 +1,6 @@
 /** Generals **/
+/*** VARIABLES ***/
+/* Colours */
 /*** BASE ***/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap");
@@ -56,7 +58,7 @@ body {
       align-items: center;
       gap: 15px; }
       .navbar .navbar-container .navbar-menu .navbar-item a[data-type='navbar-active'] {
-        color: #f1f1f1; }
+        color: #fff; }
       .navbar .navbar-container .navbar-menu .navbar-link {
         font-size: clamp(1rem, 1.5vw, 1.125rem);
         text-decoration: none;
@@ -64,7 +66,7 @@ body {
         color: #5c5c5c;
         transition: all .3s ease; }
         .navbar .navbar-container .navbar-menu .navbar-link:hover {
-          color: #f1f1f1; }
+          color: #fff; }
     .navbar .navbar-container .navbar-btn {
       display: none;
       border: none;
@@ -145,7 +147,7 @@ body {
     .last-news-section .last-news-section__container .news-card {
       width: 300px;
       height: 300px;
-      background-color: #f1f1f1;
+      background-color: #fff;
       position: relative;
       overflow: hidden;
       box-shadow: 1px 5px 10px 0 rgba(0, 0, 0, 0.4); }
@@ -159,7 +161,7 @@ body {
         top: 300px;
         width: 100%;
         height: 100%;
-        background-color: #f1f1f1;
+        background-color: #fff;
         padding: 1rem;
         transition: all .5s ease; }
         .last-news-section .last-news-section__container .news-card .news-card__body h1 {
@@ -180,7 +182,7 @@ body {
           transition: all .6s ease;
           font-weight: 500; }
           .last-news-section .last-news-section__container .news-card .news-card__body .news-card__body--btn:hover {
-            color: #f1f1f1;
+            color: #fff;
             background-color: #000; }
       .last-news-section .last-news-section__container .news-card:hover .news-card__body {
         transform: translateY(-300px);
@@ -250,7 +252,7 @@ body {
     .spotify-section .spotify-section__container .spotify-section__text {
       width: 50%;
       margin-left: 50px;
-      color: #f1f1f1;
+      color: #fff;
       position: relative; }
       .spotify-section .spotify-section__container .spotify-section__text h1,
       .spotify-section .spotify-section__container .spotify-section__text p {
@@ -313,7 +315,7 @@ body {
     width: 95%;
     margin: 0 auto;
     padding: 2rem;
-    border-bottom: 1px solid #dddddd; }
+    border-bottom: 1px solid #d1d1d1; }
     .news-section .news-section__article:last-child {
       border-bottom: none; }
     .news-section .news-section__article .news-section__header {
@@ -345,7 +347,7 @@ body {
     justify-content: center;
     gap: 2rem;
     padding: 2rem;
-    border-bottom: 1px solid #dddddd; }
+    border-bottom: 1px solid #d1d1d1; }
     .members-section .members-section__member:last-child {
       border-bottom: none;
       padding-bottom: 0; }
@@ -393,7 +395,7 @@ body {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      color: #f1f1f1;
+      color: #fff;
       opacity: 0;
       background-color: rgba(0, 0, 0, 0.8);
       transition: all .4s ease; }
@@ -422,7 +424,7 @@ footer {
       gap: 15px;
       list-style: none;
       padding: 1.5rem;
-      color: #f1f1f1; }
+      color: #fff; }
       footer .footer-content .footer-content__social-media ul a:nth-child(1) {
         background-color: #3b5998; }
       footer .footer-content .footer-content__social-media ul a:nth-child(2) {
@@ -441,7 +443,7 @@ footer {
       height: 40px;
       width: 40px;
       border-radius: 50%;
-      color: #f1f1f1;
+      color: #fff;
       text-decoration: none;
       transition: all .5s ease; }
       footer .footer-content .footer-content__social-media .footer-content__social-media--icons i {
@@ -473,7 +475,7 @@ footer {
           footer .footer-content .footer-content__info .footer-content__info--menu a:last-child() {
             margin-right: 0; }
           footer .footer-content .footer-content__info .footer-content__info--menu a:hover {
-            color: #f1f1f1; }
+            color: #fff; }
   footer .copyright-section {
     width: 100%;
     padding: 10px 0;
@@ -487,7 +489,7 @@ footer {
       transition: all .4s ease; }
 
 /** Media Query **/
-/*** MEDIAS QUERY ***/
+/*** MEDIA QUERIES ***/
 /* 1600px */
 @media (max-width: 1600px) {
   .discography-section {

@@ -15,7 +15,7 @@
             width: 40%;
             height: 400px;
             margin-right: 2%;
-            background-color: #f4f4f4;
+            background-color: $color--white-2;
             padding: 2rem;
 
             h2{
@@ -33,15 +33,15 @@
                 width: 100%;
                 text-align: center;
                 padding: 1rem 1.5rem;
-                background-color: #222;
-                color: #f4f4f4;
+                background-color: $color--dark-grey-1;
+                color: $color--white-2;
                 text-transform: uppercase;
                 text-decoration: none;
                 transition: all .4s ease;
-                border: 1px solid #222;
+                border: 1px solid $color--dark-grey-1;
 
                 &:hover{
-                    color: #222;
+                    color: $color--dark-grey-1;
                     background-color: transparent;
                 }
             }

@@ -2,7 +2,7 @@
 
 footer{
     height: auto;
-    background-color: #000;
+    background-color: $color--dark;
 
     .footer-content{
         display: flex;
@@ -18,7 +18,7 @@ footer{
                 gap: 15px;
                 list-style: none;
                 padding: 1.5rem;
-                color: #f1f1f1;
+                color: $color--white-1;
 
                 a{
                     &:nth-child(1){
@@ -51,7 +51,7 @@ footer{
                 height: 40px;
                 width: 40px;
                 border-radius: 50%;
-                color: #f1f1f1;
+                color: $color--white-1;
                 text-decoration: none;
                 transition: all .5s ease;
 
@@ -66,10 +66,10 @@ footer{
         }
 
         .footer-content__divider{
-            color: #5c5c5c;
+            color: $color--light-grey-1;
             width: 70%;
             margin: 0 auto;
-            border: 1px solid #5c5c5c;
+            border: 1px solid $color--light-grey-1;
         }
 
         .footer-content__info{
@@ -87,7 +87,7 @@ footer{
                     display: inline-block;
                     margin-right: 20px;
                     text-decoration: none;
-                    color: #5c5c5c;
+                    color: $color--light-grey-1;
                     transition: all .4s ease;
                     text-transform: uppercase;
                     font-family: 'Fredoka', sans-serif;
@@ -97,7 +97,7 @@ footer{
                     }
     
                     &:hover{
-                        color: #f1f1f1;
+                        color: $color--white-1;
                     }
                 }
             }
@@ -107,14 +107,14 @@ footer{
     .copyright-section{
         width: 100%;
         padding: 10px 0;
-        background-color: #222;
+        background-color: $color--dark-grey-1;
         color: #575656;
         text-align: center;
         font-size: 14px;
 
         a{
             text-decoration: none;
-            color: #d1d1d1;
+            color: $color--light-grey-2;
             transition: all .4s ease;
         }
     }
