@@ -279,7 +279,12 @@
         }
     }
     .discography-section{
-        grid-template-columns: 200px;
+        grid-template-columns: 250px;
+
+        .discography-section__card{
+            height: 250px;
+            width: 250px;
+        }
     }
     footer{
         .copyright-section{
