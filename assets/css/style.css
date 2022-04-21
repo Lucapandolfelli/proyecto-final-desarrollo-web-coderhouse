@@ -650,6 +650,8 @@ footer {
 @media (max-width: 480px) {
   .spotify-section .spotify-section__container .spotify-section__text h1 {
     font-size: 22px; }
+  .discography-section {
+    grid-template-columns: 200px; }
   footer .copyright-section p {
     margin: 0 auto;
     width: 80%; } }
