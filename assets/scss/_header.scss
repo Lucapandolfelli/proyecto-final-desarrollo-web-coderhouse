@@ -6,9 +6,7 @@
     font-family: 'Fredoka', sans-serif;
 
     .navbar-container{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include flex-between-center;
         height: 100%;
         width: 70%;
         margin-inline: auto;
@@ -22,10 +20,8 @@
         }
 
         .navbar-menu{
+            @include flex-center-center;
             list-style: none;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             gap: 15px;
 
             .navbar-item{
@@ -68,8 +64,7 @@
     margin-bottom: 2%;
 
     img{
-        height: 100%;
-        width: 100%;
+        @include wh-100;
         object-fit: cover;
         filter: brightness(0.6);
     }
@@ -82,10 +77,8 @@
     background-image: url('../img/banner.jpg');
     background-size: cover;
     background-position: center;
-    display: flex;
+    @include flex-between-center;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
 
     .homepage-banner__content{
         color: $color--white-1;

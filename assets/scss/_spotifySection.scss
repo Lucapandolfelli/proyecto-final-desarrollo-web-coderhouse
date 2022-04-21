@@ -8,17 +8,14 @@
 
     .spotify-section__container{
         padding: 2% 15%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center-center;
 
         .spotify-section__image{
             height: 350px;
             width: 350px;
 
             img{
-                height: 100%;
-                width: 100%;
+                @include wh-100;
             }
         }
 

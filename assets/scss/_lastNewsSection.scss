@@ -38,8 +38,7 @@
 
             .news-card__image, 
             .news-card__image img{
-                width: 100%;
-                height: 100%;
+                @include wh-100;
                 object-fit: cover;
             }
 
@@ -59,12 +58,12 @@
                 p{
                     font-size: 1rem;
                     margin-bottom: 1em;
+                    color: $color--dark-grey-3;
                 }
 
                 .news-card__body--btn{
                     width: 150px;
-                    display: flex;
-                    justify-content: center;
+                    @include flex-center-center;
                     padding: .5rem 1.5rem;
                     background-color: transparent;
                     border: 1px solid $color--dark;

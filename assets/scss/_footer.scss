@@ -5,49 +5,31 @@ footer{
     background-color: $color--dark;
 
     .footer-content{
-        display: flex;
+        @include flex-center-center;
         flex-direction: column;
-        justify-content: center;
         height: auto;
         padding: 1% 0;
 
         .footer-content__social-media{
             ul{
-                display: flex;
-                justify-content: center;
+                @include flex-center-center;
                 gap: 15px;
                 list-style: none;
                 padding: 1.5rem;
                 color: $color--white-1;
 
                 a{
-                    &:nth-child(1){
-                        background-color: #3b5998;
-                    }
-                    &:nth-child(2){
-                        background: #d6249f;
-                        background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-                    }
-                    
-                    &:nth-child(3){
-                        background-color: #e52d27;
-                    }
-                    
-                    &:nth-child(4){
-                        background-color: #00acee;
-                    }
-                    
-                    &:nth-child(5){
-                        background-color: #1ed760;
+                    @each $social, $background-color in $social__media{
+                        &:nth-child(#{$social}){
+                            background: $background-color;
+                        }
                     }
                 }
                 
             }
 
             .footer-content__social-media--icons{
-                display: flex;
-                justify-content: center;
-                align-items: center;
+                @include flex-center-center;
                 height: 40px;
                 width: 40px;
                 border-radius: 50%;
@@ -77,15 +59,11 @@ footer{
     
             .footer-content__info--menu{
                 list-style: none;
-                /* display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 20px; */
+                @include flex-center-center;
+                gap: 20px;
                 padding: 1.5rem;
     
                 a{
-                    display: inline-block;
-                    margin-right: 20px;
                     text-decoration: none;
                     color: $color--light-grey-1;
                     transition: all .4s ease;

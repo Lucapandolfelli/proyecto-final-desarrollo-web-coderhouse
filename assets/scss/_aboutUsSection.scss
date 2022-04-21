@@ -5,9 +5,7 @@
     padding: 4% 20%;
 
     .about-section__container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center-center;
         height: 450px;
 
         .about-section__info{
@@ -26,6 +24,7 @@
                 margin-bottom: 5%;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                color: $color--dark-grey-3;
             }
 
             .about-section__info--btn{
@@ -52,8 +51,7 @@
             height: 100%;
 
             img{
-                width: 100%;
-                height: 100%;
+                @include wh-100;
                 object-fit: cover;
             }
         }
