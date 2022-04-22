@@ -4,15 +4,21 @@
     height: 80px;
     background-color: $color--dark;
     font-family: 'Fredoka', sans-serif;
+    padding: 0;
 
     .navbar-container{
         @include flex-between-center;
-        height: 100%;
         width: 70%;
         margin-inline: auto;
 
         .navbar-logo{
             height: 100%;
+
+            a{
+                &:focus{
+                    border: none;
+                }
+            }
 
             img{
                 height: 100%;
@@ -113,3 +119,23 @@
         }
     }
 }
+
+.carousel{
+    .carousel-inner{
+        .carousel-item{
+            .carousel__image{
+                width: 100%;
+                height: calc(100vh - 80px);
+                object-fit: cover;
+                filter: brightness(0.5);
+            }
+
+            .carousel-caption{
+                bottom: calc(50vh - 80px);
+            }
+        }
+    }
+}
+
+
+

@@ -97,6 +97,20 @@
 
         .navbar-container{
             width: 90%;
+            height: 100%;
+        }
+    }
+    .carousel{
+        .carousel-inner{
+            .carousel-item{
+                .carousel__image{
+                    height: calc(100vh - 60px);
+                }
+    
+                .carousel-caption{
+                    bottom: calc(50vh - 80px);
+                }
+            }
         }
     }
     .last-news-section{
@@ -279,11 +293,11 @@
         }
     }
     .discography-section{
-        grid-template-columns: 250px;
+        grid-template-columns: 300px;
 
         .discography-section__card{
-            height: 250px;
-            width: 250px;
+            height: 300px;
+            width: 300px;
         }
     }
     footer{
