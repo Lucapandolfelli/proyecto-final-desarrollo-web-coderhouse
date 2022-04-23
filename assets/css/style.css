@@ -89,16 +89,19 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   font-size: clamp(1rem, 2vw, 1.125rem);
-  line-height: 1.66; }
+  line-height: 1.66;
+  background-color: #141414;
+  color: #fff; }
 
 /*** SITE ***/
 .site-page {
   width: 70%;
-  margin: 3rem auto; }
+  margin: 3rem auto;
+  margin-top: calc(80px + 3rem); }
   .site-page .site-page__title {
     text-transform: uppercase;
     font-size: 40px;
-    border-bottom: 3px solid #d1d1d1;
+    border-bottom: 1px solid rgba(200, 38, 6, 0.4);
     padding-bottom: .5rem;
     margin-bottom: 1rem;
     font-weight: 700;
@@ -113,7 +116,12 @@ body {
   height: 80px;
   background-color: #000;
   font-family: 'Fredoka', sans-serif;
-  padding: 0; }
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999; }
   .navbar .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -199,7 +207,7 @@ body {
 
 .carousel .carousel-inner .carousel-item .carousel__image {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: 100vh;
   object-fit: cover;
   filter: brightness(0.5); }
 
@@ -364,7 +372,7 @@ body {
     margin: 0 auto; }
     .about-us-section .about-us-section__content p {
       margin-bottom: 1em;
-      color: #474747; }
+      color: #d1d1d1; }
       .about-us-section .about-us-section__content p:last-child {
         margin-bottom: 0; }
 
@@ -373,6 +381,10 @@ body {
   width: 100%;
   margin: 2rem auto;
   padding: 2rem; }
+  .contact-section .contact-section__btn {
+    background-color: #252525;
+    color: #fff;
+    height: 50px; }
 
 /*** NEWS SECTION ***/
 .news-section {
@@ -482,7 +494,8 @@ body {
 /*** FOOTER ***/
 footer {
   height: auto;
-  background-color: #000; }
+  background-color: #000;
+  border-top: 1px solid rgba(200, 38, 6, 0.4); }
   footer .footer-content {
     display: flex;
     justify-content: center;
@@ -550,8 +563,8 @@ footer {
   footer .copyright-section {
     width: 100%;
     padding: 10px 0;
-    background-color: #222;
-    color: #575656;
+    background-color: #252525;
+    color: #5c5c5c;
     text-align: center;
     font-size: 14px; }
     footer .copyright-section a {
@@ -653,7 +666,9 @@ footer {
     width: 100%;
     padding: 1.5rem; }
     .news-section .news-section__article .news-section__header .news-section__header--image {
-      width: 100%; } }
+      width: 100%; }
+  .contact-section {
+    padding: 0; } }
 
 /* 763px */
 @media (max-width: 763px) {

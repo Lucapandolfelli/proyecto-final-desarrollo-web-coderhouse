@@ -24,6 +24,8 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: clamp(1rem, 2vw, 1.125rem);
     line-height: 1.66;
+    background-color: $color--dark-2;
+    color: $color--white-1;
 }
 
 /*** SITE ***/  
@@ -31,11 +33,12 @@ body{
 .site-page{
     width: 70%;
     margin: 3rem auto;
+    margin-top: calc(80px + 3rem);
 
     .site-page__title{
         text-transform: uppercase;
         font-size: 40px;
-        border-bottom: 3px solid $color--light-grey-2;
+        border-bottom: 1px solid rgba($color--red-1, 0.4);
         padding-bottom: .5rem;
         margin-bottom: 1rem;
         font-weight: 700;

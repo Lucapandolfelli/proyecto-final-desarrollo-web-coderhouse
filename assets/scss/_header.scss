@@ -5,6 +5,11 @@
     background-color: $color--dark;
     font-family: 'Fredoka', sans-serif;
     padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 
     .navbar-container{
         @include flex-between-center;
@@ -125,7 +130,7 @@
         .carousel-item{
             .carousel__image{
                 width: 100%;
-                height: calc(100vh - 80px);
+                height: 100vh;
                 object-fit: cover;
                 filter: brightness(0.5);
             }
