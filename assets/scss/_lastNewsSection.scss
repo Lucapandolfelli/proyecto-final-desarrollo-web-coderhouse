@@ -66,14 +66,13 @@
                 }
 
                 .news-card__body--btn{
+                    @extend .main_btn;
                     width: 150px;
                     @include flex-center-center;
                     padding: .5rem 1.5rem;
                     background-color: transparent;
                     border: 1px solid $color--dark;
-                    text-decoration: none;
                     color: $color--dark;
-                    text-transform: uppercase;
                     transition: all .6s ease;
                     font-weight: 500;
 

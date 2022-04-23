@@ -107,6 +107,22 @@ body {
 /*** MIXINS ***/
 /*** MAPS ***/
 /* Se usó para los botones de las redes en el footer. */
+/*** CLASSES ***/
+.main_btn, .last-news-section .last-news-section__container .news-card .news-card__body .news-card__body--btn, .contact-section .contact-section__btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 1.5rem;
+  background-color: #252525;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all .4s ease;
+  border: 1px solid #252525; }
+  .main_btn:hover, .last-news-section .last-news-section__container .news-card .news-card__body .news-card__body--btn:hover, .contact-section .contact-section__btn:hover {
+    color: #252525;
+    background-color: transparent; }
+
 /** Header **/
 /*** NAVBAR ***/
 .navbar {
@@ -162,41 +178,47 @@ body {
     filter: brightness(0.6); }
 
 /*** HOMEPAGE BANNER ***/
-.homepage-banner {
-  height: calc(100vh - 80px);
-  background-image: url("../img/banner.jpg");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column; }
-  .homepage-banner .homepage-banner__content {
-    color: #fff;
-    display: flex;
+/* .homepage-banner{
+    height: calc(100vh - 80px);
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-position: center;
+    @include flex-between-center;
     flex-direction: column;
-    padding-block: 20%; }
-    .homepage-banner .homepage-banner__content h1 {
-      font-size: clamp(3.125rem, 5vw, 6rem);
-      text-transform: uppercase; }
-    .homepage-banner .homepage-banner__content .homepage-banner__content--btn {
-      display: block;
-      height: 50px;
-      width: 50px;
-      padding: 1rem;
-      color: #fff;
-      text-decoration: none;
-      border: 1px solid #fff;
-      border-radius: 50%;
-      display: grid;
-      justify-content: center;
-      align-content: center;
-      margin: 0 auto;
-      transition: all .3s ease; }
-      .homepage-banner .homepage-banner__content .homepage-banner__content--btn:hover {
-        background-color: #fff;
-        color: #000; }
 
+    .homepage-banner__content{
+        color: $color--white-1;
+        display: flex;
+        flex-direction: column;
+        padding-block: 20%;
+
+        h1{
+            font-size: clamp(3.125rem, 5vw, 6rem);
+            text-transform: uppercase;
+        }
+
+        .homepage-banner__content--btn{
+            display: block;
+            height: 50px;
+            width: 50px;
+            padding: 1rem;
+            color: $color--white-1;
+            text-decoration: none;
+            border: 1px solid $color--white-1;
+            border-radius: 50%;
+            display: grid;
+            justify-content: center;
+            align-content: center;
+            margin: 0 auto;
+            transition: all .3s ease;
+
+            &:hover{
+                background-color: $color--white-1;
+                color: $color--dark;
+            }
+        }
+    }
+} */
 .carousel .carousel-inner .carousel-item .carousel__image {
   width: 100%;
   height: calc(100vh - 80px);
@@ -266,9 +288,7 @@ body {
           padding: .5rem 1.5rem;
           background-color: transparent;
           border: 1px solid #000;
-          text-decoration: none;
           color: #000;
-          text-transform: uppercase;
           transition: all .6s ease;
           font-weight: 500; }
           .last-news-section .last-news-section__container .news-card .news-card__body .news-card__body--btn:hover {
@@ -289,20 +309,6 @@ body {
     margin-bottom: 5%;
     overflow: hidden;
     text-overflow: ellipsis; }
-  .about-section .container .row .col-sm-12 .about-section__info--btn {
-    display: block;
-    width: 100%;
-    text-align: center;
-    padding: 1rem 1.5rem;
-    background-color: #222;
-    color: #f4f4f4;
-    text-transform: uppercase;
-    text-decoration: none;
-    transition: all .4s ease;
-    border: 1px solid #222; }
-    .about-section .container .row .col-sm-12 .about-section__info--btn:hover {
-      color: #222;
-      background-color: transparent; }
   .about-section .container .row .col .about-section__image {
     width: 100%;
     height: 100%; }
@@ -373,10 +379,17 @@ body {
   width: 100%;
   margin: 2rem auto;
   padding: 2rem; }
+  .contact-section .form-control:focus {
+    border-color: rgba(0, 0, 0, 0.116);
+    box-shadow: 0 0 20px 0.25rem rgba(0, 0, 0, 0.116); }
   .contact-section .contact-section__btn {
-    background-color: #252525;
-    color: #fff;
-    height: 50px; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-radius: 0.3rem; }
+    .contact-section .contact-section__btn:hover {
+      border: 1px solid #252525; }
 
 /*** NEWS SECTION ***/
 .news-section {
@@ -547,7 +560,7 @@ footer {
           transition: all .4s ease;
           text-transform: uppercase;
           font-family: 'Fredoka', sans-serif; }
-          footer .footer-content .footer-content__info .footer-content__info--menu a:last-child() {
+          footer .footer-content .footer-content__info .footer-content__info--menu a:last-child {
             margin-right: 0; }
           footer .footer-content .footer-content__info .footer-content__info--menu a:hover {
             color: #fff; }
@@ -580,7 +593,7 @@ footer {
 
 /* 1200px */
 @media (max-width: 1200px) {
-  .about-section .container .col-sm-12 .about-section__info--btn {
+  .about-section .container .col-sm-12 .main_btn, .about-section .container .col-sm-12 .last-news-section .last-news-section__container .news-card .news-card__body .news-card__body--btn, .last-news-section .last-news-section__container .news-card .news-card__body .about-section .container .col-sm-12 .news-card__body--btn, .about-section .container .col-sm-12 .contact-section .contact-section__btn, .contact-section .about-section .container .col-sm-12 .contact-section__btn {
     font-size: .75rem; }
   .spotify-section .spotify-section__container .spotify-section__image {
     height: 270px;

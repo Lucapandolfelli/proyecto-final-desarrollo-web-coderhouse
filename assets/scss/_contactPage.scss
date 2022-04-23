@@ -5,9 +5,21 @@
     margin: 2rem auto;
     padding: 2rem;
 
+    .form-control{
+        &:focus{
+            border-color: rgba(0, 0, 0, 0.116);
+            box-shadow: 0 0 20px 0.25rem rgba(0,0,0,0.116);
+        }
+    }
+
     .contact-section__btn{
-        background-color: $color--dark-grey-2;
-        color: $color--white-1;
+        @extend .main_btn;
+        @include flex-center-center;
         height: 50px;
+        border-radius: 0.3rem;
+
+        &:hover{
+            border: 1px solid $color--dark-grey-2;
+        }
     }
 }
