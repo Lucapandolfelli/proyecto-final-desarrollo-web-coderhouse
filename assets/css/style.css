@@ -373,6 +373,10 @@ body {
   width: 100%;
   margin: 2rem auto;
   padding: 2rem; }
+  .contact-section .contact-section__btn {
+    background-color: #252525;
+    color: #fff;
+    height: 50px; }
 
 /*** NEWS SECTION ***/
 .news-section {
@@ -653,7 +657,9 @@ footer {
     width: 100%;
     padding: 1.5rem; }
     .news-section .news-section__article .news-section__header .news-section__header--image {
-      width: 100%; } }
+      width: 100%; }
+  .contact-section {
+    padding: 0; } }
 
 /* 763px */
 @media (max-width: 763px) {
