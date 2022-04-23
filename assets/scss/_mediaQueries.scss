@@ -17,14 +17,6 @@
             width: 80%;
         }
     }
-    .about-section{
-        .about-section__container{
-            .about-section__info{
-                height: 100%;
-                margin: 0;
-            }
-        }
-    }
     .members-section{
         .members-section__member{
             align-items: center;
@@ -36,10 +28,8 @@
 
 @media (max-width: 1200px){
     .about-section{
-        .about-section__container{
-            height: 470px;
-    
-            .about-section__info{
+        .container{
+            .col-sm-12{
                 .about-section__info--btn{
                     font-size: .75rem;
                 }
@@ -135,20 +125,10 @@
     .about-section{
         padding: 4rem 20%;
 
-        .about-section__container{
+        .container{
             flex-direction: column-reverse;
             gap: 0;
             height: 100%;
-
-            .about-section__image{
-                width: 100%;
-            }
-
-            .about-section__info{
-                width: 100%;
-                padding: 1.5rem;
-                margin-right: 0;
-            }
         }
     }
     .spotify-section{
@@ -195,13 +175,6 @@
                     width: 100%;
                 }
             }
-        }
-    }
-    .contact-section form{
-        grid-template-columns: 100%;
-
-        #contenido{
-            grid-column-end: 2;
         }
     }
 }

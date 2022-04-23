@@ -100,7 +100,9 @@ body {
     font-size: 40px;
     border-bottom: 3px solid #d1d1d1;
     padding-bottom: .5rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.66; }
 
 /*** MIXINS ***/
 /*** MAPS ***/
@@ -214,7 +216,9 @@ body {
     text-transform: uppercase;
     font-size: 38px;
     text-align: center;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    font-weight: 700;
+    line-height: 1.66; }
   .last-news-section .last-news-section__container {
     display: grid;
     grid-template-columns: repeat(3, 300px);
@@ -247,7 +251,9 @@ body {
         padding: 1rem;
         transition: all .5s ease; }
         .last-news-section .last-news-section__container .news-card .news-card__body h1 {
-          margin-bottom: 2%; }
+          margin-bottom: 2%;
+          font-weight: 700;
+          font-size: 1.35rem; }
         .last-news-section .last-news-section__container .news-card .news-card__body p {
           font-size: 1rem;
           margin-bottom: 1em;
@@ -275,47 +281,35 @@ body {
 /*** ABOUT US SECTION ***/
 .about-section {
   background-color: #00acee;
-  padding: 4% 20%; }
-  .about-section .about-section__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 450px; }
-    .about-section .about-section__container .about-section__info {
-      position: relative;
-      width: 40%;
-      height: 400px;
-      margin-right: 2%;
-      background-color: #f4f4f4;
-      padding: 2rem; }
-      .about-section .about-section__container .about-section__info h2 {
-        margin-bottom: 3%; }
-      .about-section .about-section__container .about-section__info p {
-        margin-bottom: 5%;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        color: #474747; }
-      .about-section .about-section__container .about-section__info .about-section__info--btn {
-        display: block;
-        width: 100%;
-        text-align: center;
-        padding: 1rem 1.5rem;
-        background-color: #222;
-        color: #f4f4f4;
-        text-transform: uppercase;
-        text-decoration: none;
-        transition: all .4s ease;
-        border: 1px solid #222; }
-        .about-section .about-section__container .about-section__info .about-section__info--btn:hover {
-          color: #222;
-          background-color: transparent; }
-    .about-section .about-section__container .about-section__image {
-      width: 60%;
-      height: 100%; }
-      .about-section .about-section__container .about-section__image img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
+  padding: 7rem 10%; }
+  .about-section .container .row .col-sm-12 h2 {
+    margin-bottom: 3%;
+    font-weight: 700; }
+  .about-section .container .row .col-sm-12 p {
+    margin-bottom: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .about-section .container .row .col-sm-12 .about-section__info--btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    background-color: #222;
+    color: #f4f4f4;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .4s ease;
+    border: 1px solid #222; }
+    .about-section .container .row .col-sm-12 .about-section__info--btn:hover {
+      color: #222;
+      background-color: transparent; }
+  .about-section .container .row .col .about-section__image {
+    width: 100%;
+    height: 100%; }
+    .about-section .container .row .col .about-section__image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
 
 /*** SPOTIFY SECTION ***/
 .spotify-section {
@@ -339,7 +333,9 @@ body {
       margin-left: 50px;
       color: #fff;
       position: relative; }
-      .spotify-section .spotify-section__container .spotify-section__text h1,
+      .spotify-section .spotify-section__container .spotify-section__text h1 {
+        margin-bottom: 15px;
+        font-size: 27px; }
       .spotify-section .spotify-section__container .spotify-section__text p {
         margin-bottom: 15px; }
       .spotify-section .spotify-section__container .spotify-section__text .spotify-section__text--spotify {
@@ -374,24 +370,9 @@ body {
 
 /*** CONTACT SECTION ***/
 .contact-section {
-  background-color: #a7a7a7;
   width: 100%;
   margin: 2rem auto;
   padding: 2rem; }
-  .contact-section form {
-    display: grid;
-    grid-template-columns: repeat(2, 45%);
-    justify-content: center;
-    gap: 1rem; }
-    .contact-section form input {
-      padding: 1rem 1rem; }
-    .contact-section form #edad {
-      grid-column-start: 1; }
-    .contact-section form #contenido {
-      grid-column-start: 1;
-      grid-column-end: 3; }
-    .contact-section form #enviar {
-      grid-column-start: 1; }
 
 /*** NEWS SECTION ***/
 .news-section {
@@ -545,7 +526,8 @@ footer {
       color: #5c5c5c;
       width: 70%;
       margin: 0 auto;
-      border: 1px solid #5c5c5c; }
+      border: 1px solid #5c5c5c;
+      opacity: 1; }
     footer .footer-content .footer-content__info {
       margin: 0 auto; }
       footer .footer-content .footer-content__info .footer-content__info--menu {
@@ -589,18 +571,13 @@ footer {
 @media (max-width: 1400px) {
   .navbar .navbar-container {
     width: 80%; }
-  .about-section .about-section__container .about-section__info {
-    height: 100%;
-    margin: 0; }
   .members-section .members-section__member {
     align-items: center; } }
 
 /* 1200px */
 @media (max-width: 1200px) {
-  .about-section .about-section__container {
-    height: 470px; }
-    .about-section .about-section__container .about-section__info .about-section__info--btn {
-      font-size: .75rem; }
+  .about-section .container .col-sm-12 .about-section__info--btn {
+    font-size: .75rem; }
   .spotify-section .spotify-section__container .spotify-section__image {
     height: 270px;
     width: 270px; }
@@ -647,16 +624,10 @@ footer {
       width: 100%; }
   .about-section {
     padding: 4rem 20%; }
-    .about-section .about-section__container {
+    .about-section .container {
       flex-direction: column-reverse;
       gap: 0;
       height: 100%; }
-      .about-section .about-section__container .about-section__image {
-        width: 100%; }
-      .about-section .about-section__container .about-section__info {
-        width: 100%;
-        padding: 1.5rem;
-        margin-right: 0; }
   .spotify-section {
     height: auto; }
     .spotify-section .spotify-section__container {
@@ -682,11 +653,7 @@ footer {
     width: 100%;
     padding: 1.5rem; }
     .news-section .news-section__article .news-section__header .news-section__header--image {
-      width: 100%; }
-  .contact-section form {
-    grid-template-columns: 100%; }
-    .contact-section form #contenido {
-      grid-column-end: 2; } }
+      width: 100%; } }
 
 /* 763px */
 @media (max-width: 763px) {

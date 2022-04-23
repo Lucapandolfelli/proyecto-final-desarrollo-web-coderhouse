@@ -25,7 +25,11 @@
             color: $color--white-1;
             position: relative;
 
-            h1,
+            h1{
+                margin-bottom: 15px;
+                font-size: 27px;
+            }
+
             p{
                 margin-bottom: 15px;
             }

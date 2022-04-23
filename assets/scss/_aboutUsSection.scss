@@ -2,57 +2,51 @@
 
 .about-section{
     background-color: #00acee;
-    padding: 4% 20%;
+    padding: 7rem 10%;
 
-    .about-section__container{
-        @include flex-center-center;
-        height: 450px;
+    .container{
+        .row{
 
-        .about-section__info{
-            position: relative;
-            width: 40%;
-            height: 400px;
-            margin-right: 2%;
-            background-color: $color--white-2;
-            padding: 2rem;
+            .col-sm-12{
+                h2{
+                    margin-bottom: 3%;
+                    font-weight: 700;
+                }
 
-            h2{
-                margin-bottom: 3%;
-            }
+                p{
+                    margin-bottom: 5%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
 
-            p{
-                margin-bottom: 5%;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                color: $color--dark-grey-3;
-            }
+                .about-section__info--btn{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    padding: 1rem 1.5rem;
+                    background-color: #222;
+                    color: #f4f4f4;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    transition: all .4s ease;
+                    border: 1px solid #222;
 
-            .about-section__info--btn{
-                display: block;
-                width: 100%;
-                text-align: center;
-                padding: 1rem 1.5rem;
-                background-color: $color--dark-grey-1;
-                color: $color--white-2;
-                text-transform: uppercase;
-                text-decoration: none;
-                transition: all .4s ease;
-                border: 1px solid $color--dark-grey-1;
-
-                &:hover{
-                    color: $color--dark-grey-1;
-                    background-color: transparent;
+                    &:hover{
+                        color: #222;
+                        background-color: transparent;
+                    }
                 }
             }
-        }
 
-        .about-section__image{
-            width: 60%;
-            height: 100%;
+            .col{
+                .about-section__image{
+                    @include wh-100;
 
-            img{
-                @include wh-100;
-                object-fit: cover;
+                    img{
+                        @include wh-100;
+                        object-fit: cover;
+                    }
+                }
             }
         }
     }
