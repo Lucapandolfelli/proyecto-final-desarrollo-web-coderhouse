@@ -2,7 +2,8 @@
 
 .navbar{
     height: 80px;
-    background-color: $color--dark;
+   /*  background-color: #212121; */
+   background-color: #030303;
     font-family: 'Fredoka', sans-serif;
     padding: 0;
     position: fixed;
@@ -14,6 +15,7 @@
     .navbar-container{
         @include flex-between-center;
         width: 70%;
+        height: 100%;
         margin-inline: auto;
 
         .navbar-logo{

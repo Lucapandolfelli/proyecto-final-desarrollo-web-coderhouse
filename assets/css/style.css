@@ -90,7 +90,8 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.66;
-  background-color: #141414;
+  /* background-color: #181818; */
+  background-color: #212121;
   color: #fff; }
 
 /*** SITE ***/
@@ -114,7 +115,8 @@ body {
 /*** NAVBAR ***/
 .navbar {
   height: 80px;
-  background-color: #000;
+  /*  background-color: #212121; */
+  background-color: #030303;
   font-family: 'Fredoka', sans-serif;
   padding: 0;
   position: fixed;
@@ -127,6 +129,7 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 70%;
+    height: 100%;
     margin-inline: auto; }
     .navbar .navbar-container .navbar-logo {
       height: 100%; }
