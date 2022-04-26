@@ -104,6 +104,9 @@ body {
     font-weight: 700;
     line-height: 1.66; }
 
+.disclaimer {
+  display: none; }
+
 /*** MIXINS ***/
 /*** MAPS ***/
 /* Se usó para los botones de las redes en el footer. */
