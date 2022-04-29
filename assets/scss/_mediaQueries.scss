@@ -219,7 +219,7 @@
         }
     }
     .hero{
-        height: 20vh;
+        height: 40vh;
         margin-top: 60px;
     }
     .carousel{
@@ -232,6 +232,10 @@
         .site-page__title{
             font-size: 28px;
         }
+    }
+    .site-page-np{
+        width: 90%;
+        margin-top: 3rem;
     }
     .discography-section{
         grid-template-columns: repeat(2, 200px);
