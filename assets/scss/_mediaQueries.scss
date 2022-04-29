@@ -191,6 +191,20 @@
     
             .navbar-menu{
                 display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100%;
+                background-color: $color--dark;
+                flex-direction: column;
+                gap: 2.5rem;
+                z-index: 9999;
+
+                .navbar-link{
+                    font-size: 1.125rem;
+                }
             }
     
             .navbar-btn{
