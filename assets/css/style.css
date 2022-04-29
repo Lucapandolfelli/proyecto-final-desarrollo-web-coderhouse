@@ -708,11 +708,13 @@ footer {
       .navbar .navbar-container .navbar-btn {
         display: block; }
   .hero {
-    height: 20vh; }
+    height: 20vh;
+    margin-top: 60px; }
   .carousel {
     margin-top: 60px; }
   .site-page {
-    width: 90%; }
+    width: 90%;
+    margin-top: calc(3rem + 60px); }
     .site-page .site-page__title {
       font-size: 28px; }
   .discography-section {

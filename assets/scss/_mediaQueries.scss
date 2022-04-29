@@ -220,12 +220,14 @@
     }
     .hero{
         height: 20vh;
+        margin-top: 60px;
     }
     .carousel{
         margin-top: 60px;
     }
     .site-page{
         width: 90%;
+        margin-top: calc(3rem + 60px);
 
         .site-page__title{
             font-size: 28px;
