@@ -683,28 +683,34 @@ footer {
 
 /* 763px */
 @media (max-width: 763px) {
-  .navbar .navbar-container {
-    width: 90%; }
-    .navbar .navbar-container .navbar-menu {
-      display: none;
-      position: absolute;
-      top: 0;
-      left: 0;
-      padding: 0;
-      height: 100vh;
-      width: 100%;
-      background-color: #000;
-      flex-direction: column;
-      gap: 2.5rem;
-      z-index: 9999; }
-      .navbar .navbar-container .navbar-menu .navbar-link {
-        font-size: 1.125rem; }
-    .navbar .navbar-container .navbar-btn {
-      display: block; }
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; }
+    .navbar .navbar-container {
+      width: 90%; }
+      .navbar .navbar-container .navbar-menu {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0;
+        height: 100vh;
+        width: 100%;
+        background-color: #000;
+        flex-direction: column;
+        gap: 2.5rem;
+        z-index: 9999; }
+        .navbar .navbar-container .navbar-menu .navbar-link {
+          font-size: 1.125rem; }
+      .navbar .navbar-container .navbar-btn {
+        display: block; }
   .hero {
     height: 20vh; }
-  .homepage-banner {
-    height: calc(80vh - 80px); }
+  .carousel {
+    margin-top: 60px; }
   .site-page {
     width: 90%; }
     .site-page .site-page__title {

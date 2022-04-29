@@ -186,12 +186,18 @@
 
 @media (max-width: 763px){
     .navbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+
         .navbar-container{
             width: 90%;
     
             .navbar-menu{
                 display: none;
-                position: absolute;
+                position: fixed;
                 top: 0;
                 left: 0;
                 padding: 0;
@@ -215,8 +221,8 @@
     .hero{
         height: 20vh;
     }
-    .homepage-banner{
-        height: calc(80vh - 80px);
+    .carousel{
+        margin-top: 60px;
     }
     .site-page{
         width: 90%;
