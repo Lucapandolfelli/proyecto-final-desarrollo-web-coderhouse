@@ -131,7 +131,7 @@ body {
     .site-page {
       width: 90%;
       margin-top: calc(3rem + 60px); } }
-  .site-page .site-page__title {
+  .site-page__title, .contact-section__container--title {
     text-transform: uppercase;
     font-size: 40px;
     border-bottom: 3px solid #d1d1d1;
@@ -140,10 +140,10 @@ body {
     font-weight: 700;
     line-height: 1.66; }
     @media (max-width: 1023px) {
-      .site-page .site-page__title {
+      .site-page__title, .contact-section__container--title {
         font-size: 32px; } }
     @media (max-width: 763px) {
-      .site-page .site-page__title {
+      .site-page__title, .contact-section__container--title {
         font-size: 28px; } }
 
 @media (max-width: 763px) {

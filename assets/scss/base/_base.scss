@@ -42,7 +42,7 @@ body{
         margin-top: calc(3rem + 60px);
     }
 
-    .site-page__title{
+    &__title{
         text-transform: uppercase;
         font-size: 40px;
         border-bottom: 3px solid $color--light-grey-2;
