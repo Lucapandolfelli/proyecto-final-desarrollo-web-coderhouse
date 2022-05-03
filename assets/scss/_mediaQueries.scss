@@ -207,7 +207,7 @@
                 flex-direction: column;
                 gap: 2.5rem;
                 z-index: 9999;
-                animation: fadeIn linear .6s;
+                animation: fadeIn linear .4s;
 
                 @keyframes fadeIn {
                     0%{
@@ -229,7 +229,7 @@
         }
     }
     .hero{
-        height: 40vh;
+        height: 20vh;
         margin-top: 60px;
     }
     .carousel{
