@@ -63,7 +63,7 @@
     .members-section{
         .members-section__member{
             flex-direction: column-reverse;
-            padding: 1.5rem;
+            padding: 1.5rem 0;
 
             &:nth-child(2),
             &:nth-child(4){
