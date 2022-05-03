@@ -17,3 +17,9 @@
     height: 100%;
 }
 
+@mixin mq($size){
+    @media (max-width: map-get($breakpoints, $size)){
+        @content;
+    }
+}
+

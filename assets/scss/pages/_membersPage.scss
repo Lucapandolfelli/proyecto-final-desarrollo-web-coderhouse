@@ -12,6 +12,20 @@
         padding: 2rem;
         border-bottom: 1px solid $color--light-grey-2;
 
+        @include mq(xlarge){
+            align-items: center;
+        }
+
+        @include mq(large){
+            flex-direction: column-reverse;
+            padding: 1.5rem 0;
+
+            &:nth-child(2),
+            &:nth-child(4){
+                flex-direction: column;
+            }
+        }
+
         &:last-child{
             border-bottom: none;
             padding-bottom: 0;
@@ -20,6 +34,11 @@
         .members-section__member--info{
             width: 55%;
             margin-top: 2%;
+
+            @include mq(large){
+                width: 100%;
+                margin: 0;
+            }
 
             h1{
                 margin-bottom: 1%;
@@ -40,6 +59,11 @@
         .members-section__member--image{
             width: 40%;
             height: 100%;
+
+            @include mq(large){
+                width: 100%;
+                margin: 0;
+            }
 
             img{
                 @include wh-100;

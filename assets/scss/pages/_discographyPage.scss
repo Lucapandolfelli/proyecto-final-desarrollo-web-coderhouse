@@ -7,11 +7,50 @@
     gap: 20px;
     padding: 2% 0;
 
+    @include mq(xxlarge){
+        grid-template-columns: repeat(3, 270px);
+        gap: 1.5rem;
+    }
+
+    @include mq(large){
+        grid-template-columns: repeat(3, 250px);
+        gap: 1rem;
+    }
+
+    @include mq(medium){
+        grid-template-columns: repeat(3, 200px);
+        gap: 1rem;
+    }
+
+    @include mq(small){
+        grid-template-columns: repeat(2, 200px);
+        gap: 10px;
+    }
+
+    @include mq(xsmall){
+        grid-template-columns: 300px;
+    }
+
     .discography-section__card{
         height: 270px;
         width: 270px;
         position: relative;
         cursor: pointer;
+
+        @include mq(large){
+            height: 250px;
+            width: 250px;
+        }
+
+        @include mq(medium){
+            height: 200px;
+            width: 200px;
+        }
+
+        @include mq(xsmall){
+            height: 300px;
+            width: 300px;
+        }
 
         img{
             @include wh-100;

@@ -6,10 +6,35 @@
     font-family: 'Fredoka', sans-serif;
     padding: 0;
 
-    .navbar-container{
+    @include mq(medium){
+        height: 60px
+    }
+
+    @include mq(small){
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+    &-container{
         @include flex-between-center;
         width: 70%;
         margin-inline: auto;
+
+        @include mq(xlarge){
+            width: 80%;
+        }
+
+        @include mq(medium){
+            width: 90%;
+            height: 100%;
+        }
+
+        @include mq(small){
+            width: 90%;
+        }
 
         .navbar-logo{
             height: 100%;
@@ -31,6 +56,21 @@
             list-style: none;
             gap: 15px;
 
+            @include mq(small){
+                display: none;
+                position: fixed;
+                top: 0;
+                left: 0;
+                padding: 0;
+                height: 100vh;
+                width: 100%;
+                background-color: $color--dark;
+                flex-direction: column;
+                gap: 2.5rem;
+                z-index: 9999;
+                animation: fadeIn linear .4s;
+            }
+
             .navbar-item{
                 a[data-type='navbar-active']{
                     color: $color--white-1;
@@ -44,6 +84,10 @@
                 color: $color--light-grey-1;
                 transition: all .3s ease;
 
+                @include mq(small){
+                    font-size: 1.125rem;
+                }
+
                 &:hover{
                     color: $color--white-1;
                 } 
@@ -56,6 +100,10 @@
             background-color: transparent;
             color: $color--white-1;
             cursor: pointer;
+
+            @include mq(small){
+                display: block;
+            }
 
             i{
                 font-size: 22px;
@@ -75,6 +123,11 @@
     height: 60vh;
     margin-bottom: 2%;
 
+    @include mq(small){
+        height: 20vh;
+        margin-top: 60px;
+    }
+
     img{
         @include wh-100;
         object-fit: cover;
@@ -82,51 +135,11 @@
     }
 }
 
-/*** HOMEPAGE BANNER ***/
-
-/* .homepage-banner{
-    height: calc(100vh - 80px);
-    background-image: url('../img/banner.jpg');
-    background-size: cover;
-    background-position: center;
-    @include flex-between-center;
-    flex-direction: column;
-
-    .homepage-banner__content{
-        color: $color--white-1;
-        display: flex;
-        flex-direction: column;
-        padding-block: 20%;
-
-        h1{
-            font-size: clamp(3.125rem, 5vw, 6rem);
-            text-transform: uppercase;
-        }
-
-        .homepage-banner__content--btn{
-            display: block;
-            height: 50px;
-            width: 50px;
-            padding: 1rem;
-            color: $color--white-1;
-            text-decoration: none;
-            border: 1px solid $color--white-1;
-            border-radius: 50%;
-            display: grid;
-            justify-content: center;
-            align-content: center;
-            margin: 0 auto;
-            transition: all .3s ease;
-
-            &:hover{
-                background-color: $color--white-1;
-                color: $color--dark;
-            }
-        }
-    }
-} */
 
 .carousel{
+    @include mq(small){
+        margin-top: 60px;
+    }
     .carousel-inner{
         .carousel-item{
             .carousel__image{
@@ -134,10 +147,18 @@
                 height: calc(100vh - 80px);
                 object-fit: cover;
                 filter: brightness(0.5);
+
+                @include mq(medium){
+                    height: calc(100vh - 60px);
+                }
             }
 
             .carousel-caption{
                 bottom: calc(50vh - 80px);
+
+                @include mq(medium){
+                    bottom: calc(50vh - 80px);
+                }
             }
         }
     }

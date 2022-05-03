@@ -6,13 +6,35 @@
     display: flex;
     align-items: center;
 
+    @include mq(medium){
+        height: auto;
+    }
+
     .spotify-section__container{
         padding: 2% 15%;
         @include flex-center-center;
 
+        @include mq(medium){
+            flex-direction: column-reverse;
+            padding: 5rem 10%;
+        }
+
+        @include mq(small){
+            padding: 5rem 10%;
+        }
+
         .spotify-section__image{
             height: 350px;
             width: 350px;
+
+            @include mq(large){
+                height: 270px;
+                width: 270px;
+            }
+
+            @include mq(medium){
+                display: none;
+            }
 
             img{
                 @include wh-100;
@@ -25,9 +47,26 @@
             color: $color--white-1;
             position: relative;
 
+            @include mq(large){
+                width: 60%;
+            }
+
+            @include mq(medium){
+                width: 80%;
+                margin: 0;
+            }
+
+            @include mq(small){
+                width: 100%;
+            }
+
             h1{
                 margin-bottom: 15px;
                 font-size: 27px;
+
+                @include mq(xsmall){
+                    font-size: 22px;
+                }
             }
 
             p{
@@ -57,6 +96,10 @@
                 position: absolute;
                 top: -30px;
                 right: -60px;
+
+                @include mq(large){
+                    display: none;
+                }
             }
         }
     }

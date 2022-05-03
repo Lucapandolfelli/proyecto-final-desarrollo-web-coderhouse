@@ -41,62 +41,68 @@
         </nav>
     </header>
 
-    <main class="site-page">
-        <h1 class="site-page__title">Contacto</h1>
-        
+    <!-- Contact Image -->
+    <section class="hero">
+        <img src="../assets/img/contact.jpg" alt="">
+    </section>
+
+    <main class="site-page-np contact">
         <!-- Contact Section -->
         <section class="contact-section">
-            <form class="row">
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control form-control-lg" id="nombre">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <label for="apellido" class="form-label">Apellido</label>
-                        <input type="text" class="form-control form-control-lg" id="apellido">
-                    </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="mb-3">
-                        <label for="mail" class="form-label">Mail</label>
-                        <input type="email" class="form-control form-control-lg" id="mail">
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <select class="form-select form-control-lg" aria-label="Default select example">
-                            <option selected>Rango de edad</option>
-                            <option value="1">Menor de 18 años</option>
-                            <option value="2">Mayor de 18 años</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="mb-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                ¿Desea recibir noticias sobre U2?
-                            </label>
+            <div class="contact-section__container">
+                <h1 class="site-page__title">Contacto</h1>
+                <form class="row mt-5">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control form-control-lg" id="nombre">
                         </div>
                     </div>
-                </div>
-                <div class="col-md-12">
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">Ingrese el contenido del mail</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control form-control-lg" id="apellido">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <button type="submit" class="main_btn contact-section__btn mb-3 w-100">Enviar</button>
-                </div>
-                <div class="col-md-6">
-                    <button type="reset" class="main_btn contact-section__btn w-100">Resetear</button>
-                </div>
-            </form>
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label for="mail" class="form-label">Mail</label>
+                            <input type="email" class="form-control form-control-lg" id="mail">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <select class="form-select form-control-lg" aria-label="Default select example">
+                                <option selected>Rango de edad</option>
+                                <option value="1">Menor de 18 años</option>
+                                <option value="2">Mayor de 18 años</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    ¿Desea recibir noticias sobre U2?
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Ingrese el contenido del mail</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="submit" class="main_btn contact-section__btn mb-3 w-100">Enviar</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="reset" class="main_btn contact-section__btn w-100">Resetear</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 

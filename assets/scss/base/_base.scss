@@ -32,6 +32,16 @@ body{
     width: 70%;
     margin: 3rem auto;
 
+    @include mq(medium){
+        width: 80%;
+        margin: 3rem auto;
+    }
+
+    @include mq(small){
+        width: 90%;
+        margin-top: calc(3rem + 60px);
+    }
+
     .site-page__title{
         text-transform: uppercase;
         font-size: 40px;
@@ -40,7 +50,22 @@ body{
         margin-bottom: 1rem;
         font-weight: 700;
         line-height: 1.66;
+
+        @include mq(medium){
+            font-size: 32px;
+        }
+
+        @include mq(small){
+            font-size: 28px;
+        }
     }    
+}
+
+.site-page-np{
+    @include mq(small){
+        width: 90%;
+        margin-top: 3rem;
+    }
 }
 
 .disclaimer{

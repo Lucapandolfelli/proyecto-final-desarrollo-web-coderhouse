@@ -4,7 +4,21 @@
     background-color: #00acee;
     padding: 7rem 10%;
 
+    @include mq(medium){
+        padding: 4rem 20%;
+    }
+    
+    @include mq(small){
+        padding: 3rem 10%;
+    }
+
     .container{
+        @include mq(medium){
+            flex-direction: column-reverse;
+            gap: 0;
+            height: 100%;
+        }
+        
         .row{
 
             .col-sm-12{
@@ -17,6 +31,12 @@
                     margin-bottom: 5%;
                     overflow: hidden;
                     text-overflow: ellipsis;
+                }
+
+                .main-btn{
+                    @include mq(large){
+                        font-size: .75rem
+                    }
                 }
             }
 

@@ -91,6 +91,13 @@ footer{
         text-align: center;
         font-size: 14px;
 
+        p{
+            @include mq(xsmall){
+                margin: 0 auto;
+                width: 80%;
+            }
+        }
+
         a{
             text-decoration: none;
             color: $color--light-grey-2;

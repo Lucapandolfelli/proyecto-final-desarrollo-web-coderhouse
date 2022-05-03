@@ -1,31 +1,31 @@
-/** Generals **/
-@import 'variables';
-@import 'reset';
-@import 'base';
-@import 'mixins';
-@import 'maps';
-@import 'classes';
+/** Utilities **/
+@import 'utilities/variables';
+@import 'utilities/mixins';
+@import 'utilities/maps';
+@import 'utilities/classes';
+@import 'utilities/breakpoints';
+@import 'utilities/animations';
 
-/** Header **/
-@import 'header';
+/** Base **/
+@import 'base/reset';
+@import 'base/base';
 
-/** Index **/
-@import 'lastNewsSection';
-@import 'aboutUsSection';
-@import 'spotifySection';
+/** Components **/
+@import 'components/header';
+@import 'components/footer';
 
 /** Pages **/
-@import 'aboutUsPage';
-@import 'contactPage';
-@import 'newsPage';
-@import 'membersPage';
-@import 'discographyPage';
+@import 'pages/aboutUsPage';
+@import 'pages/contactPage';
+@import 'pages/newsPage';
+@import 'pages/membersPage';
+@import 'pages/discographyPage';
 
-/** Footer **/
-@import 'footer';
+/** Sections **/
+@import 'sections/lastNewsSection';
+@import 'sections/aboutUsSection';
+@import 'sections/spotifySection';
 
-/** Media Query **/
-@import 'mediaQueries';
 
 
 
