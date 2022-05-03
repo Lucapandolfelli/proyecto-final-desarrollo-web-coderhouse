@@ -702,7 +702,13 @@ footer {
         background-color: #000;
         flex-direction: column;
         gap: 2.5rem;
-        z-index: 9999; }
+        z-index: 9999;
+        animation: fadeIn linear .6s; }
+  @keyframes fadeIn {
+    0% {
+      transform: translateX(100vw); }
+    100% {
+      transform: translateX(0); } }
         .navbar .navbar-container .navbar-menu .navbar-link {
           font-size: 1.125rem; }
       .navbar .navbar-container .navbar-btn {
