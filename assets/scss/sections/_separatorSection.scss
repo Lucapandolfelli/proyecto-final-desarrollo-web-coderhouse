@@ -21,10 +21,12 @@
     &__image{
         @include wh-100;
         filter: brightness(.4);
+        
 
         img{
             width: 100%;
-
+            background: rgb(0,0,0);
+        background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6124824929971988) 50%, rgba(0,0,0,0) 100%);
         }
     }
 
@@ -38,13 +40,18 @@
 
         &--text{
             color: $color--white-1;
-            margin-bottom: 1em;
-            font-size: clamp(1.25rem, 3vw, 2.125rem)
+            margin-bottom: .25em;
+            font-size: clamp(1.25rem, 3vw, 2.125rem);
+            font-weight: 400;
         }
 
         &--btn{
-            @extend .main_btn;
-            width: auto;
+            color: $color--primary-1;
+            transition: all .6s ease;
+
+            &:hover{
+                color: $color--primary-2;
+            }
         }
     }
 }
