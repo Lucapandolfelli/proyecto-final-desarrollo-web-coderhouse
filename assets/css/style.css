@@ -8,7 +8,7 @@
 /*** CLASSES ***/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap");
-.main_btn, .contact-section .contact-section__btn, .last-news-section .last-news-section__container .news-card .news-card__body .news-card__body--btn {
+.main_btn, .contact-section .contact-section__btn, .last-news-section .last-news-section__container .news-card .news-card__body .news-card__body--btn, .separator__container--btn {
   display: block;
   width: 100%;
   text-align: center;
@@ -19,7 +19,7 @@
   text-decoration: none;
   transition: all .4s ease;
   border: 1px solid #252525; }
-  .main_btn:hover, .contact-section .contact-section__btn:hover, .last-news-section .last-news-section__container .news-card .news-card__body .news-card__body--btn:hover {
+  .main_btn:hover, .contact-section .contact-section__btn:hover, .last-news-section .last-news-section__container .news-card .news-card__body .news-card__body--btn:hover, .separator__container--btn:hover {
     color: #252525;
     background-color: transparent; }
 
@@ -118,6 +118,14 @@ body {
   font-family: 'Poppins', sans-serif;
   font-size: clamp(1rem, 2vw, 1.125rem);
   line-height: 1.66; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #121212; }
 
 /*** SITE ***/
 .site-page {
@@ -248,8 +256,11 @@ body {
   margin-bottom: 2%; }
   @media (max-width: 763px) {
     .hero {
-      height: 20vh;
+      height: 40vh;
       margin-top: 60px; } }
+  @media (max-width: 468px) {
+    .hero {
+      height: 20vh; } }
   .hero img {
     width: 100%;
     height: 100%;
@@ -369,7 +380,7 @@ footer {
     margin: 0 auto; }
     .about-us-section .about-us-section__content p {
       margin-bottom: 1em;
-      color: #474747; }
+      color: #2e2e2e; }
       .about-us-section .about-us-section__content p:last-child {
         margin-bottom: 0; }
 
@@ -386,7 +397,13 @@ footer {
     @media (max-width: 1023px) {
       .contact-image {
         width: 100%;
+        height: 60vh; } }
+    @media (max-width: 763px) {
+      .contact-image {
         height: 40vh; } }
+    @media (max-width: 468px) {
+      .contact-image {
+        height: 20vh; } }
     .contact-image img {
       width: 100%;
       height: 100%;
@@ -402,9 +419,23 @@ footer {
       .contact-section {
         padding: 0;
         width: 100%; } }
-    .contact-section .form-control:focus {
-      border-color: rgba(0, 0, 0, 0.116);
-      box-shadow: 0 0 20px 0.25rem rgba(0, 0, 0, 0.116); }
+    @media (max-width: 1023px) {
+      .contact-section__container {
+        width: 80%; } }
+    @media (max-width: 763px) {
+      .contact-section__container {
+        width: 90%; } }
+    .contact-section .form-label {
+      color: #121212;
+      text-transform: uppercase;
+      font-weight: 500; }
+    .contact-section .form-control, .contact-section .form-control-lg {
+      color: #2e2e2e;
+      font-size: 1.125rem;
+      border-radius: 3px; }
+      .contact-section .form-control:focus, .contact-section .form-control-lg:focus {
+        border-color: rgba(0, 0, 0, 0.116);
+        box-shadow: 0 0 10px 0.25rem rgba(0, 0, 0, 0.116); }
     .contact-section .contact-section__btn {
       display: flex;
       justify-content: center;
@@ -450,7 +481,7 @@ footer {
           object-fit: cover; }
     .news-section .news-section__article .news-section__content p {
       margin-bottom: 2%;
-      color: #474747; }
+      color: #2e2e2e; }
     .news-section .news-section__article .news-section__footer {
       width: 70%;
       margin: 0 auto; }
@@ -495,7 +526,7 @@ footer {
         margin-bottom: 2%;
         font-weight: 500; }
       .members-section .members-section__member .members-section__member--info p {
-        color: #474747; }
+        color: #2e2e2e; }
     .members-section .members-section__member .members-section__member--image {
       width: 40%;
       height: 100%; }
@@ -573,7 +604,8 @@ footer {
         font-size: 18px;
         text-align: center;
         font-family: 'Fredoka', sans-serif;
-        font-weight: 400; }
+        font-weight: 400;
+        color: #fff; }
     .discography-section .discography-section__card:hover .discography-section__card--text {
       opacity: 1; }
 
@@ -657,7 +689,7 @@ footer {
         .last-news-section .last-news-section__container .news-card .news-card__body p {
           font-size: 1rem;
           margin-bottom: 1em;
-          color: #474747; }
+          color: #2e2e2e; }
         .last-news-section .last-news-section__container .news-card .news-card__body .news-card__body--btn {
           width: 150px;
           display: flex;
@@ -760,7 +792,8 @@ footer {
           width: 100%; } }
       .spotify-section .spotify-section__container .spotify-section__text h1 {
         margin-bottom: 15px;
-        font-size: 27px; }
+        font-size: 27px;
+        color: #fff; }
         @media (max-width: 468px) {
           .spotify-section .spotify-section__container .spotify-section__text h1 {
             font-size: 22px; } }
@@ -784,3 +817,41 @@ footer {
         @media (max-width: 1200px) {
           .spotify-section .spotify-section__container .spotify-section__text .spotify-section__text--top {
             display: none; } }
+
+/*** SEPARATOR SECTION ***/
+.separator {
+  width: 100%;
+  height: 48vh;
+  overflow: hidden;
+  position: relative; }
+  @media (max-width: 1023px) {
+    .separator {
+      height: 30vh; } }
+  @media (max-width: 763px) {
+    .separator {
+      height: 21vh; } }
+  @media (max-width: 468px) {
+    .separator {
+      height: 16vh; } }
+  .separator__image {
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.4); }
+    .separator__image img {
+      width: 100%; }
+  .separator__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .separator__container--text {
+      color: #fff;
+      margin-bottom: 1em;
+      font-size: clamp(1.25rem, 3vw, 2.125rem); }
+    .separator__container--btn {
+      width: auto; }

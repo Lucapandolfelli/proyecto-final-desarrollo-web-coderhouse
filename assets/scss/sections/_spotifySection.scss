@@ -63,6 +63,7 @@
             h1{
                 margin-bottom: 15px;
                 font-size: 27px;
+                color: $color--white-1;
 
                 @include mq(xsmall){
                     font-size: 22px;

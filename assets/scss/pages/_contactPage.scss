@@ -14,7 +14,15 @@
 
         @include mq(medium){
             width: 100%;
+            height: 60vh;
+        }
+
+        @include mq(small){
             height: 40vh;
+        }
+
+        @include mq(xsmall){
+            height: 20vh;
         }
     
         img{
@@ -35,15 +43,36 @@
         }
 
         &__container{
+            @include mq(medium){
+                width: 80%;
+            }
+
+            @include mq(small){
+                width: 90%;
+            }
+
             &--title{
                 @extend .site-page__title;
             }
         }
-    
-        .form-control{
-            &:focus{
-                border-color: rgba(0, 0, 0, 0.116);
-                box-shadow: 0 0 20px 0.25rem rgba(0,0,0,0.116);
+
+        .form{
+            &-label{
+                color: $color--dark-1;
+                text-transform: uppercase;
+                font-weight: 500;
+            }
+
+            &-control,
+            &-control-lg{
+                color: $color--dark-grey-3;
+                font-size: 1.125rem;
+                border-radius: 3px;
+
+                &:focus{
+                    border-color: rgba(0, 0, 0, 0.116);
+                    box-shadow: 0 0 10px 0.25rem rgba(0,0,0,0.116);
+                }
             }
         }
     
