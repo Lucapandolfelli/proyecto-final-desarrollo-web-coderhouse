@@ -761,7 +761,7 @@ footer {
         padding: 5rem 10%; } }
     @media (max-width: 763px) {
       .spotify-section .spotify-section__container {
-        padding: 5rem 10%; } }
+        padding: 3rem 10%; } }
     .spotify-section .spotify-section__container .spotify-section__image {
       height: 350px;
       width: 350px; }
@@ -799,23 +799,38 @@ footer {
             font-size: 22px; } }
       .spotify-section .spotify-section__container .spotify-section__text p {
         margin-bottom: 15px; }
-      .spotify-section .spotify-section__container .spotify-section__text .spotify-section__text--spotify {
+      .spotify-section .spotify-section__container .spotify-section__text--spotify {
         font-family: 'Gotham';
         color: #1ed760;
         font-weight: 400; }
-        .spotify-section .spotify-section__container .spotify-section__text .spotify-section__text--spotify i {
+        .spotify-section .spotify-section__container .spotify-section__text--spotify i {
           margin-right: 2px; }
       .spotify-section .spotify-section__container .spotify-section__text ul {
         padding-left: 35px; }
         .spotify-section .spotify-section__container .spotify-section__text ul .spotify-section__text--span {
           color: #5c5c5c;
           font-size: 14px; }
-      .spotify-section .spotify-section__container .spotify-section__text .spotify-section__text--top {
+        @media (max-width: 1023px) {
+          .spotify-section .spotify-section__container .spotify-section__text ul {
+            margin-bottom: 2rem; } }
+      .spotify-section .spotify-section__container .spotify-section__text--btn {
+        display: none;
+        color: #1ed760;
+        transition: all .6s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        @media (max-width: 1023px) {
+          .spotify-section .spotify-section__container .spotify-section__text--btn {
+            display: flex; } }
+        .spotify-section .spotify-section__container .spotify-section__text--btn:hover {
+          color: #17af4c; }
+      .spotify-section .spotify-section__container .spotify-section__text--top {
         position: absolute;
         top: -30px;
         right: -60px; }
         @media (max-width: 1200px) {
-          .spotify-section .spotify-section__container .spotify-section__text .spotify-section__text--top {
+          .spotify-section .spotify-section__container .spotify-section__text--top {
             display: none; } }
 
 /*** SEPARATOR SECTION ***/
@@ -832,7 +847,7 @@ footer {
       height: 21vh; } }
   @media (max-width: 468px) {
     .separator {
-      height: 16vh; } }
+      height: 20vh; } }
   .separator__image {
     width: 100%;
     height: 100%;

@@ -2,7 +2,7 @@
 
 .spotify-section{
     height: 500px;
-    background-color: #131416;
+    background-color: $color--spotify-3;
     display: flex;
     align-items: center;
 
@@ -20,7 +20,7 @@
         }
 
         @include mq(small){
-            padding: 5rem 10%;
+            padding: 3rem 10%;
         }
 
         .spotify-section__image{
@@ -74,9 +74,9 @@
                 margin-bottom: 15px;
             }
 
-            .spotify-section__text--spotify{
+            &--spotify{
                 font-family: 'Gotham';
-                color: #1ed760;
+                color: $color--spotify-1;
                 font-weight: 400;
 
                 i{
@@ -91,9 +91,28 @@
                     color: $color--light-grey-1;
                     font-size: 14px;
                 }
+
+                @include mq(medium){
+                    margin-bottom: 2rem;
+                }
             }
 
-            .spotify-section__text--top{
+            &--btn{
+                display: none;
+                color: $color--spotify-1;
+                transition: all .6s ease;
+                @include flex-center-center;
+
+                @include mq(medium){
+                    display: flex;
+                }
+
+                &:hover{
+                    color: $color--spotify-2;
+                }
+            }
+
+            &--top{
                 position: absolute;
                 top: -30px;
                 right: -60px;
