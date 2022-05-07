@@ -158,7 +158,7 @@
             }
 
             .carousel-caption{
-                bottom: calc(35vh - 80px);
+                bottom: calc(50vh - 80px);
 
                 @include mq(medium){
                     bottom: calc(35vh - 60px);
