@@ -15,7 +15,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        z-index: 9999;
+        z-index: 99999;
     }
 
     &-container{
@@ -35,86 +35,87 @@
         @include mq(small){
             width: 90%;
         }
+    }
 
-        .navbar-logo{
+    .navbar-logo{
+        height: 100%;
+        z-index: 99999;
+
+        a{
+            &:focus{
+                border: none;
+            }
+        }
+
+        img{
             height: 100%;
-            z-index: 99999;
-
-            a{
-                &:focus{
-                    border: none;
-                }
-            }
-
-            img{
-                height: 100%;
-            }
         }
+    }
 
-        .navbar-menu{
-            @include flex-center-center;
-            list-style: none;
-            gap: 15px;
+    &-menu{
+        @include flex-center-center;
+        list-style: none;
+        gap: 15px;
 
-            @include mq(small){
-                display: none;
-                position: fixed;
-                top: 0;
-                left: 0;
-                padding: 0;
-                height: 100vh;
-                width: 100%;
-                background-color: $color--dark;
-                flex-direction: column;
-                gap: 2.5rem;
-                z-index: 9999;
-                animation: fadeIn linear .4s;
-            }
-
-            .navbar-item{
-                a[data-type='navbar-active']{
-                    color: $color--white-1;
-                }
-            }
-
-            .navbar-link{
-                font-size: clamp(1rem, 1.5vw, 1.125rem);
-                text-decoration: none;
-                text-transform: uppercase;
-                color: $color--light-grey-1;
-                transition: all .3s ease;
-
-                @include mq(small){
-                    font-size: 1.125rem;
-                }
-
-                &:hover{
-                    color: $color--white-1;
-                } 
-            }
-        }
-
-        .navbar-btn{
+        @include mq(small){
             display: none;
-            border: none;
-            background-color: transparent;
-            color: $color--white-1;
-            cursor: pointer;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 0;
+            height: 100vh;
+            width: 100%;
+            background-color: $color--dark;
+            flex-direction: column;
+            gap: 2.5rem;
+            z-index: 9999;
+        }
 
-            @include mq(small){
-                display: block;
-            }
-
-            i{
-                font-size: 22px;
+        .navbar-item{
+            a[data-type='navbar-active']{
+                color: $color--white-1;
             }
         }
 
-        #btn-toggle-close{
+        .navbar-link{
+            font-size: clamp(1rem, 1.5vw, 1.125rem);
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $color--light-grey-1;
+            transition: all .3s ease;
+
+            @include mq(small){
+                font-size: 1.125rem;
+            }
+
+            &:hover{
+                color: $color--white-1;
+            } 
+        }
+    }
+
+    &-btn{
+        display: none;
+        border: none;
+        background-color: transparent;
+        color: $color--white-1;
+        cursor: pointer;
+        z-index: 99999;
+
+        @include mq(small){
+            display: block;
+        }
+
+        i{
+            font-size: 22px;
+        }
+
+        &#btn-toggle-close{
             display: none;
             z-index: 99999;
         }
     }
+
 }
 
 /*** HERO ***/
