@@ -31,7 +31,7 @@
         grid-template-columns: 300px;
     }
 
-    .discography-section__card{
+    &__card{
         height: 270px;
         width: 270px;
         position: relative;
@@ -58,7 +58,7 @@
             filter: brightness(1);
         }
 
-        .discography-section__card--text{
+        &--text{
             position: absolute;
             top: 0;
             left: 0;

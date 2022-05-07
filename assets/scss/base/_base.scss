@@ -51,6 +51,11 @@ h6{
         margin-top: calc(3rem + 60px);
     }
 
+    @include mq(xsmall){
+        margin: 2rem auto;
+        margin-top: calc(2rem + 60px);
+    }
+
     &__title{
         text-transform: uppercase;
         font-size: 40px;
@@ -73,7 +78,7 @@ h6{
 .site-page-np{
     @include mq(small){
         width: 90%;
-        margin-top: 3rem;
+        margin-top: 2rem;
     }
 }
 

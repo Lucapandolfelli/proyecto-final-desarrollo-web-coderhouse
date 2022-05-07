@@ -19,6 +19,7 @@
 
         @include mq(small){
             height: 40vh;
+            margin-top: 60px;
         }
 
         @include mq(xsmall){

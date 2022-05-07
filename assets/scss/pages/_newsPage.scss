@@ -4,7 +4,7 @@
     padding-bottom: 1%;
     margin: 0 auto;
 
-    .news-section__article{
+    &-article{
         width: 95%;
         margin: 0 auto;
         padding: 2rem;
@@ -24,15 +24,15 @@
             border-bottom: none;
         }
 
-        .news-section__header{
+        &__header{
             margin-bottom: 1em;
 
-            .news-section__header--title{
+            &--title{
                 margin-bottom: 1em;
                 font-size: 24px;
             }
 
-            .news-section__header--image{
+            &--image{
                 width: 80%;
                 margin: 0 auto;
                 margin-bottom: 1.5rem;
@@ -48,14 +48,14 @@
             }
         }
 
-        .news-section__content{
+        &__content{
             p{
                 margin-bottom: 2%;
                 color: $color--dark-grey-3;
             }
         }
 
-        .news-section__footer{
+        &__footer{
             width: 70%;
             margin: 0 auto;
         }
