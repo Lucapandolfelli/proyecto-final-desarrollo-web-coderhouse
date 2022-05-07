@@ -285,7 +285,7 @@ h6 {
       height: calc(70vh - 60px); } }
 
 .carousel .carousel-inner .carousel-item .carousel-caption {
-  bottom: calc(35vh - 80px); }
+  bottom: calc(50vh - 80px); }
   @media (max-width: 1023px) {
     .carousel .carousel-inner .carousel-item .carousel-caption {
       bottom: calc(35vh - 60px); } }
