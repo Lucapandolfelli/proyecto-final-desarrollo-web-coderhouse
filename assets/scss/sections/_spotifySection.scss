@@ -10,7 +10,7 @@
         height: auto;
     }
 
-    .spotify-section__container{
+    &__container{
         padding: 2% 15%;
         @include flex-center-center;
 
@@ -22,107 +22,109 @@
         @include mq(small){
             padding: 3rem 10%;
         }
+    }   
 
-        .spotify-section__image{
-            height: 350px;
-            width: 350px;
+    &__image{
+        height: 350px;
+        width: 350px;
 
-            @include mq(large){
-                height: 270px;
-                width: 270px;
-            }
+        @include mq(large){
+            height: 270px;
+            width: 270px;
+        }
 
-            @include mq(medium){
-                display: none;
-            }
+        @include mq(medium){
+            display: none;
+        }
 
-            img{
-                @include wh-100;
+        img{
+            @include wh-100;
+        }
+    }
+
+    &__text{
+        width: 50%;
+        margin-left: 50px;
+        color: $color--white-1;
+        position: relative;
+
+        @include mq(large){
+            width: 60%;
+        }
+
+        @include mq(medium){
+            width: 80%;
+            margin: 0;
+        }
+
+        @include mq(small){
+            width: 100%;
+        }
+
+        &--title{
+            margin-bottom: 15px;
+            font-size: 27px;
+            color: $color--white-1;
+
+            @include mq(xsmall){
+                font-size: 22px;
+                padding-right: 50%;
             }
         }
 
-        .spotify-section__text{
-            width: 50%;
-            margin-left: 50px;
-            color: $color--white-1;
-            position: relative;
+        &--content{
+            margin-bottom: 15px;
+        }
 
-            @include mq(large){
-                width: 60%;
+        &--spotify{
+            font-family: 'Gotham';
+            color: $color--spotify-1;
+            font-weight: 400;
+
+            i{
+                margin-right: 2px;
+            }
+        }
+
+        &--list{
+            padding-left: 35px;
+
+            .spotify-section__text--span{
+                color: $color--light-grey-1;
+                font-size: 14px;
             }
 
             @include mq(medium){
-                width: 80%;
-                margin: 0;
+                margin-bottom: 2rem;
+            }
+        }
+
+        &--btn{
+            color: $color--spotify-1;
+            transition: all .6s ease;
+            @include flex-center-center;
+            display: none;
+
+            @include mq(medium){
+                display: flex;
             }
 
-            @include mq(small){
-                width: 100%;
+            &:hover{
+                color: $color--spotify-2;
             }
+        }
 
-            h1{
-                margin-bottom: 15px;
-                font-size: 27px;
-                color: $color--white-1;
+        &--top{
+            position: absolute;
+            top: -30px;
+            right: -60px;
 
-                @include mq(xsmall){
-                    font-size: 22px;
-                }
-            }
-
-            p{
-                margin-bottom: 15px;
-            }
-
-            &--spotify{
-                font-family: 'Gotham';
-                color: $color--spotify-1;
-                font-weight: 400;
-
-                i{
-                    margin-right: 2px;
-                }
-            }
-
-            ul{
-                padding-left: 35px;
-
-                .spotify-section__text--span{
-                    color: $color--light-grey-1;
-                    font-size: 14px;
-                }
-
-                @include mq(medium){
-                    margin-bottom: 2rem;
-                }
-            }
-
-            &--btn{
-                color: $color--spotify-1;
-                transition: all .6s ease;
-                @include flex-center-center;
+            @include mq(large){
                 display: none;
-
-                @include mq(medium){
-                    display: flex;
-                }
-
-                &:hover{
-                    color: $color--spotify-2;
-                }
-            }
-
-            &--top{
-                position: absolute;
-                top: -30px;
-                right: -60px;
-
-                @include mq(large){
-                    display: none;
-                }
             }
         }
     }
+    
 }
 
 

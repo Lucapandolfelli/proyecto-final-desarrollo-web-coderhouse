@@ -153,15 +153,15 @@
                 filter: brightness(0.5);
 
                 @include mq(medium){
-                    height: calc(100vh - 60px);
+                    height: calc(70vh - 60px);
                 }
             }
 
             .carousel-caption{
-                bottom: calc(50vh - 80px);
+                bottom: calc(35vh - 80px);
 
                 @include mq(medium){
-                    bottom: calc(50vh - 80px);
+                    bottom: calc(35vh - 60px);
                 }
             }
         }
