@@ -24,7 +24,6 @@
 
     @include mq(small){
         grid-template-columns: repeat(2, 200px);
-        gap: 10px;
     }
 
     @include mq(xsmall){

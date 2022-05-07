@@ -424,7 +424,8 @@ footer {
     .contact-image img {
       width: 100%;
       height: 100%;
-      object-fit: cover; }
+      object-fit: cover;
+      filter: brightness(0.6); }
   .contact-section {
     width: 50%;
     margin: 2rem auto;
@@ -576,8 +577,7 @@ footer {
       gap: 1rem; } }
   @media (max-width: 763px) {
     .discography-section {
-      grid-template-columns: repeat(2, 200px);
-      gap: 10px; } }
+      grid-template-columns: repeat(2, 200px); } }
   @media (max-width: 468px) {
     .discography-section {
       grid-template-columns: 300px; } }
@@ -866,9 +866,6 @@ footer {
   @media (max-width: 763px) {
     .separator {
       height: 25vh; } }
-  @media (max-width: 468px) {
-    .separator {
-      height: 20vh; } }
   .separator__image {
     width: 100%;
     height: 100%;

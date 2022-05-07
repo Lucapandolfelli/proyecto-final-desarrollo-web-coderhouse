@@ -14,10 +14,6 @@
         height: 25vh;
     }
 
-    @include mq(xsmall){
-        height: 20vh;
-    }
-
     &__image{
         @include wh-100;
         filter: brightness(.4);
