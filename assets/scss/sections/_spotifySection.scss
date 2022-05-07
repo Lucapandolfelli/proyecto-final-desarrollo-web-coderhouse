@@ -98,10 +98,10 @@
             }
 
             &--btn{
-                display: none;
                 color: $color--spotify-1;
                 transition: all .6s ease;
                 @include flex-center-center;
+                display: none;
 
                 @include mq(medium){
                     display: flex;

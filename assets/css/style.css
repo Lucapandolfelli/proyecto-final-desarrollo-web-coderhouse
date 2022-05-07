@@ -814,12 +814,12 @@ footer {
           .spotify-section .spotify-section__container .spotify-section__text ul {
             margin-bottom: 2rem; } }
       .spotify-section .spotify-section__container .spotify-section__text--btn {
-        display: none;
         color: #1ed760;
         transition: all .6s ease;
         display: flex;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        display: none; }
         @media (max-width: 1023px) {
           .spotify-section .spotify-section__container .spotify-section__text--btn {
             display: flex; } }
