@@ -863,6 +863,7 @@ footer {
     filter: brightness(0.4); }
     .separator__image img {
       width: 100%;
+      object-fit: cover;
       /* background: rgb(0,0,0);
             background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.6124824929971988) 50%, rgba(0,0,0,0) 100%); */ }
       @media (max-width: 468px) {
