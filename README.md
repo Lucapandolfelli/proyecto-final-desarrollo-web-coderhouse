@@ -1,2 +1,2 @@
-# U2-Pandolfelli
-Proyecto del curso de 'Desarrollo Web' de Coderhouse.
+# Proyecto del Curso de Desarrollo Web de CoderHouse
+Página web estructurada en HTML, utilizando el preecompilador SASS y algunas líneas de Javascript.
