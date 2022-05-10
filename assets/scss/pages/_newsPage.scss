@@ -72,6 +72,12 @@
         &__footer{
             a{
                 text-decoration: none;
+                color: $color--secundary-1;
+                transition: all .5s ease;
+
+                &:hover{
+                    color: $color--secundary-2;
+                }
             }
         }
     }

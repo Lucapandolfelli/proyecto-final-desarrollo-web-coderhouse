@@ -602,7 +602,11 @@ footer {
       margin-bottom: 1em;
       color: #2e2e2e; }
     .news-section-article__footer a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #C82606;
+      transition: all .5s ease; }
+      .news-section-article__footer a:hover {
+        color: #a12007; }
 
 /*** MEMBERS SECTION ***/
 .members-section {
