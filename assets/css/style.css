@@ -317,12 +317,58 @@ h6 {
   @media (max-width: 1023px) {
     .carousel .carousel-inner .carousel-item .carousel__image {
       height: calc(70vh - 60px); } }
+  @media (max-width: 468px) {
+    .carousel .carousel-inner .carousel-item .carousel__image {
+      height: calc(35vh - 60px); } }
 
 .carousel .carousel-inner .carousel-item .carousel-caption {
-  bottom: calc(50vh - 80px); }
-  @media (max-width: 1023px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 2rem;
+  height: 200px;
+  width: 50%;
+  top: 20px;
+  background-color: rgba(255, 255, 255, 0.8); }
+  @media (max-width: 1400px) {
     .carousel .carousel-inner .carousel-item .carousel-caption {
-      bottom: calc(35vh - 60px); } }
+      width: 70%; } }
+  @media (max-width: 763px) {
+    .carousel .carousel-inner .carousel-item .carousel-caption {
+      width: auto;
+      left: 20px;
+      right: 20px;
+      display: flex; } }
+  @media (max-width: 468px) {
+    .carousel .carousel-inner .carousel-item .carousel-caption {
+      display: none; } }
+  .carousel .carousel-inner .carousel-item .carousel-caption h3 {
+    font-weight: 500;
+    font-size: clamp(1.25rem, 2vw, 2rem);
+    text-transform: uppercase;
+    margin-bottom: .5rem; }
+  .carousel .carousel-inner .carousel-item .carousel-caption p {
+    color: #252525;
+    margin-bottom: 1em;
+    text-align: start; }
+    @media (max-width: 1023px) {
+      .carousel .carousel-inner .carousel-item .carousel-caption p {
+        font-size: 1rem; } }
+  .carousel .carousel-inner .carousel-item .carousel-caption a {
+    display: block;
+    background-color: #C82606;
+    padding: .5rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .3s ease; }
+    @media (max-width: 1023px) {
+      .carousel .carousel-inner .carousel-item .carousel-caption a {
+        font-size: 1rem; } }
+    .carousel .carousel-inner .carousel-item .carousel-caption a:hover {
+      background-color: #a12007; }
 
 /*** FOOTER ***/
 footer {
@@ -765,6 +811,12 @@ footer {
       flex-direction: column-reverse;
       gap: 0;
       height: 100%; } }
+  @media (max-width: 1023px) {
+    .about-section .container .row {
+      flex-direction: column-reverse !important; } }
+  @media (max-width: 1023px) {
+    .about-section .container .row .col-sm-12 {
+      width: 100% !important; } }
   .about-section .container .row .col-sm-12 h2 {
     margin-bottom: 3%;
     font-weight: 700; }
