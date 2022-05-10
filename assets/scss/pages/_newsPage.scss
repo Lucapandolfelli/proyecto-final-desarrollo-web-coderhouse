@@ -16,8 +16,8 @@
         }
 
         @include mq(small){
-            padding: .5rem;
-            padding-top: 1rem;
+            padding: 0;
+            padding-block: 2rem;
         }
 
         &:last-child{
@@ -28,36 +28,51 @@
             margin-bottom: 1em;
 
             &--title{
+                margin-bottom: .5em;
+                font-size: clamp(2rem, 2vw, 2.5rem);
+                line-height: 1;
+                font-weight: 600;
+            }
+
+            &--subtitle{
+                font-size: clamp(1.125rem, 1.5vw, 1.5rem);
+                font-weight: 400;
                 margin-bottom: 1em;
-                font-size: 24px;
             }
 
             &--image{
                 width: 80%;
-                margin: 0 auto;
+                height: 500px;
                 margin-bottom: 1.5rem;
 
                 @include mq(medium){
                     width: 100%;
                 }
 
-                img{
+                @include mq(small){
+                    height: 300px;
+                }
+
+                img,
+                iframe{
                     width: 100%;
+                    height: 100%;
                     object-fit: cover;
                 }
             }
         }
 
         &__content{
-            p{
-                margin-bottom: 2%;
+            &--text{
+                margin-bottom: 1em;
                 color: $color--dark-grey-3;
             }
         }
 
         &__footer{
-            width: 70%;
-            margin: 0 auto;
+            a{
+                text-decoration: none;
+            }
         }
     }
 }
